@@ -8,28 +8,6 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
-}
-.title {
-  color: #000;
-  text-decoration: none;
-  float: left;
-  display: block;
-  width: 240px;
-  top: 40px;
-}
-
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-  }
-
-  .row {
-    padding: 0 10px;
-  }
-}
-
 header {
   background: #f7f7f7;
   width: 240px;
@@ -40,6 +18,15 @@ header {
   color: #000;
 }
 
+header .title {
+  color: #000;
+  text-decoration: none;
+  float: left;
+  display: block;
+  width: 240px;
+  top: 40px;
+}
+
 header nav {
   position: absolute;
   left: 0;
@@ -47,12 +34,23 @@ header nav {
   display: block;
 }
 
-nav a {
+header nav a {
   width: 240px;
   display: block;
   float: left;
-  color: #000;
+  color: #aaa;
   text-decoration: none;
   line-height: 30px;
   padding: 10px 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+  }
+
+  .row {
+    padding: 0 10px;
+  }
 }
