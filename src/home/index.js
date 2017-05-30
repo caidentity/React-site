@@ -11,6 +11,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
+import styles from '../style/app.css';
 
 class HomePage extends React.Component {
 
@@ -21,10 +22,33 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h1>Home</h1>
-        <div className={s.imgheader}></div>
-        <p>Lorem ipsum dolor sit amet, mucius splendide id duo, vitae omnium vulputate cum ex. Ex ius viris facete facilisis, mei amet justo eu, quaeque impedit facilisi ea ius. Et est utroque delectus sapientem, eos id agam fuisset pertinax. Ius ea choro molestie explicari, cum ea magna libris populo. Eros dolorem per ut, in elit fierent vim. Prompta nonumes sententiae in duo. Tempor saperet nominavi est te, id vis laudem accusam omittantur. Per ei timeam convenire consetetur, unum adipisci percipitur has ei. Ut lorem eleifend eum, duis dicta legimus sit et. Vix dico iudico ei. His facilis laboramus ea, stet partiendo in pri. Ad eum elitr saperet vulputate. Id fabellas assueverit eum, omnes meliore intellegam est ne, ad mea eros nostrud. Dico deleniti adipiscing eu mel, ei vel affert gloriatur. Dolor reprimique pro ut, deleniti sapientem ad pri. No usu tamquam labitur molestie, autem nullam ponderum nam ne, ne summo impetus suscipit mel. Has ei delenit definitiones, mea erant audire cu, duo an eripuit probatus dissentiunt. Quo offendit expetendis an, at vim prima movet viderer. Et sea novum graeci maluisset, assentior voluptatum nec ei. Ad saperet dolorum convenire duo, ei mei labore scribentur. Cu consul salutatus patrioque mei, eam te omnis utinam eripuit. Mea id porro postea sensibus, soluta adolescens eu per</p>
-        <p>Lorem ipsum dolor sit amet, mucius splendide id duo, vitae omnium vulputate cum ex. Ex ius viris facete facilisis, mei amet justo eu, quaeque impedit facilisi ea ius. Et est utroque delectus sapientem, eos id agam fuisset pertinax. Ius ea choro molestie explicari, cum ea magna libris populo. Eros dolorem per ut, in elit fierent vim. Prompta nonumes sententiae in duo. Tempor saperet nominavi est te, id vis laudem accusam omittantur. Per ei timeam convenire consetetur, unum adipisci percipitur has ei. Ut lorem eleifend eum, duis dicta legimus sit et. Vix dico iudico ei. His facilis laboramus ea, stet partiendo in pri. Ad eum elitr saperet vulputate. Id fabellas assueverit eum, omnes meliore intellegam est ne, ad mea eros nostrud. Dico deleniti adipiscing eu mel, ei vel affert gloriatur. Dolor reprimique pro ut, deleniti sapientem ad pri. No usu tamquam labitur molestie, autem nullam ponderum nam ne, ne summo impetus suscipit mel. Has ei delenit definitiones, mea erant audire cu, duo an eripuit probatus dissentiunt. Quo offendit expetendis an, at vim prima movet viderer. Et sea novum graeci maluisset, assentior voluptatum nec ei. Ad saperet dolorum convenire duo, ei mei labore scribentur. Cu consul salutatus patrioque mei, eam te omnis utinam eripuit. Mea id porro postea sensibus, soluta adolescens eu per</p>
+        <div className={classnames(styles.col, styles.col12)}>
+          <h1>Home</h1>
+          <div className={styles.img}></div>
+        </div>
+        <!-- Three columns -->
+        <div className={classnames(styles.col, styles.col3)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col3)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col3)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col12)}>
+          <p>We are upbeat, resourceful, and friendly. We motivate and demonstrate
+          a can-do attitude to show our customers what good things are possible.
+          We know that innovating and getting things done is messy, we acknowledge
+          that, and then focus on the solutions together.</p>
+          <p>We are not delusional. We know that we make sophisticated, and at
+          times complicated tools that take a little time to master. So we dont
+          over-promise when it comes to the learning curve. We strive to simplify
+          the path and explain the best way forward.</p>
+          <p>We make people more productive and less stressed. We cant
+          solve every problem a team has, but we empathize and give it our
+          best shot.</p>
+        </div>
       </Layout>
     );
   }
