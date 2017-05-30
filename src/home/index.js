@@ -12,6 +12,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import styles from '../style/app.css';
+import classnames from 'classnames';
 
 class HomePage extends React.Component {
 
@@ -26,14 +27,31 @@ class HomePage extends React.Component {
           <h1>Home</h1>
           <div className={styles.img}></div>
         </div>
-        <!-- Three columns -->
-        <div className={classnames(styles.col, styles.col3)}>
+        <div className={classnames(styles.col, styles.col2)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col2)}>
           <div className={styles.img}></div>
         </div>
         <div className={classnames(styles.col, styles.col3)}>
           <div className={styles.img}></div>
         </div>
         <div className={classnames(styles.col, styles.col3)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col3)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col4)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col4)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col4)}>
+          <div className={styles.img}></div>
+        </div>
+        <div className={classnames(styles.col, styles.col4)}>
           <div className={styles.img}></div>
         </div>
         <div className={classnames(styles.col, styles.col12)}>
