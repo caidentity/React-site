@@ -17,14 +17,14 @@ import classnames from 'classnames';
 class AboutPage extends React.Component {
 
   componentDidMount() {
-    document.title = "About";
+    document.title = "Logo Guidelines";
   }
 
   render() {
     return (
       <Layout className={s.content}>
         <div className={classnames(styles.col, styles.col12)}>
-          <h1>Brand</h1>
+          <h1 className={styles.title}>Logo guidelines</h1>
           <div className={styles.img}></div>
         </div>
         <div className={classnames(styles.col, styles.col3)}>
