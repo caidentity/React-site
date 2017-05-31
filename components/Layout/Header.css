@@ -11,7 +11,7 @@
 header {
   display: flex;
   position: absolute;
-  background: #f7f7f7;
+  background: #fff;
   width: 240px;
   height: 100%;
   z-index: 4;
@@ -19,18 +19,20 @@ header {
 }
 
 header .title {
-  color: #000;
   text-decoration: none;
   float: left;
   display: block;
-  width: 240px;
-  top: 40px;
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+  background: #eee;
+  margin: 110px 10px 0px;
 }
 
 header nav {
   position: absolute;
   left: 0;
-  top: 90px;
+  top: 160px;
   display: block;
 }
 
@@ -43,7 +45,15 @@ header nav a {
   line-height: 30px;
   padding: 10px 20px;
 }
+header nav a:hover {
+  color: #000;
+}
 
+header span {
+  float: left;
+  margin: 30px 20px 0px;
+  color: #aaa;
+}
 
 @media screen and (max-width: 1000px) {
   header {

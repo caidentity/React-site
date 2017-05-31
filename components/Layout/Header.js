@@ -27,10 +27,7 @@ class Header extends React.Component {
     return (
       <header className={`sidebar ${s.header}`} ref={node => (this.root = node)}>
         <div className={`${s.row}`}>
-          <Link className={`title ${s.title}`} to="/">
-            E
-          </Link>
-          <div className="mdl-layout-spacer" />
+          <Link className={`title ${s.title}`} to="/">  </Link>
           <Navigation />
         </div>
       </header>
