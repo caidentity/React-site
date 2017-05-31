@@ -67,7 +67,12 @@ header span {
     color: #000;
     display: flex;
   }
-
+  header .title {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
   .row {
     padding: 0 10px;
   }
