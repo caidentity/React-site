@@ -17,3 +17,14 @@ main {
   max-width: 1000px;
   width: 1000px;
 }
+
+@media screen and (max-width: 1000px) {
+  main {
+    margin-left: 0px;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 90%;
+    width: 90%;
+  }
+}

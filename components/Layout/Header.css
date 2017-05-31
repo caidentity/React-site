@@ -9,11 +9,11 @@
 */
 
 header {
+  display: flex;
+  position: absolute;
   background: #f7f7f7;
   width: 240px;
-  position: absolute;
   height: 100%;
-  max-width: 240px;
   z-index: 4;
   color: #000;
 }
@@ -45,8 +45,16 @@ header nav a {
 }
 
 
-@media screen and (max-width: 1024px) {
-  .header {
+@media screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: #f7f7f7;
+    width: 100%;
+    height: 40px;
+    z-index: 4;
+    color: #000;
     display: flex;
   }
 
