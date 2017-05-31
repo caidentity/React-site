@@ -124,6 +124,15 @@ const config = {
         ],
       },
       {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader',
+          `css-loader?${JSON.stringify({ sourceMap: isDebug, minimize: !isDebug })}`,
+          'postcss-loader?pack=sass',
+          'sass-loader',
+        ],
+      },
+      {
         test: /\.json$/,
         exclude: [
           path.resolve(__dirname, '../src/routes.json'),
