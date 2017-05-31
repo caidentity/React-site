@@ -124,6 +124,10 @@ const config = {
         ],
       },
       {
+        test: /\.(jpe?g|gif|png)$/,
+        loader: 'file-loader?emitFile=false&name=[path][name].[ext]'
+      },
+      {
         test: /\.scss$/,
         loaders: [
           'style-loader',
