@@ -48,6 +48,8 @@
     "markdown-it": "^8.3.1",
     "mocha": "^3.2.0",
     "node-sass": "^4.5.3",
+    "node-sass-chokidar": "0.0.2",
+    "npm-run-all": "^4.0.2",
     "path-to-regexp": "^1.7.0",
     "pixrem": "^3.0.2",
     "pleeease-filters": "^3.0.1",
