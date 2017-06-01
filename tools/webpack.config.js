@@ -124,10 +124,6 @@ const config = {
         ],
       },
       {
-        test: /\.(jpe?g|gif|png)$/,
-        loader: 'file-loader?emitFile=false&name=[path][name].[ext]'
-      },
-      {
         test: /\.scss$/,
         loaders: [
           'style-loader',
@@ -161,6 +157,10 @@ const config = {
       {
         test: /\.md$/,
         loader: path.resolve(__dirname, './markdown-loader.js'),
+      },
+      {
+        test: /\.(jpe?g|gif|png)$/,
+        loader: 'file-loader?emitFile=false&name=[path][name].[ext]'
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,

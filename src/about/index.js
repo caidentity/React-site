@@ -13,7 +13,7 @@ import Layout from '../../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
-import styles from '../style/app.css';
+import styles from '../assets/app.css';
 import classnames from 'classnames';
 
 class AboutPage extends React.Component {
