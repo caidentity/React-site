@@ -34,10 +34,10 @@ class AboutPage extends React.Component {
           <Grid fluid>
             <Row>
               <Col xs={12} md={12}>
-              <p>We are upbeat, resourceful, and friendly. We motivate and demonstrate
-              a can-do attitude to show our customers what good things are possible.
-              We know that innovating and getting things done is messy, we acknowledge
-              that, and then focus on the solutions together.</p>
+                <p>We are upbeat, resourceful, and friendly. We motivate and demonstrate
+                a can-do attitude to show our customers what good things are possible.
+                We know that innovating and getting things done is messy, we acknowledge
+                that, and then focus on the solutions together.</p>
               </Col>
             </Row>
             <Row>

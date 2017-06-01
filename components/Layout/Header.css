@@ -36,6 +36,7 @@ header nav {
   left: 0;
   top: 160px;
   display: block;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
 }
 
 header nav a {
@@ -46,6 +47,8 @@ header nav a {
   text-decoration: none;
   line-height: 30px;
   padding: 10px 20px;
+  font-size: 13px;
+
 }
 header nav a:hover {
   color: #000;
@@ -55,6 +58,7 @@ header span {
   float: left;
   margin: 30px 20px 0px;
   color: #aaa;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1000px) {

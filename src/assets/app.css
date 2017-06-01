@@ -29,7 +29,8 @@ main {
   background: #F2F2F2; }
   .pagetitle .title {
     padding: 100px 20px 0px;
-    margin: 0; }
+    margin: 0;
+    font-family: "gotham-light", helevetica neue, helvetica, sans-serif; }
 
 .hometitle {
   height: 455px;
@@ -39,4 +40,5 @@ main {
   margin-top: 0px; }
   .hometitle .title {
     padding: 180px 0px 0px;
-    margin: 0; }
+    margin: 0;
+    font-family: "gotham-light", helevetica neue, helvetica, sans-serif; }
