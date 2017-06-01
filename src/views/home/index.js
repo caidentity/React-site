@@ -25,34 +25,37 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <Grid fluid>
-          <Row>
-            <h1 className={styles.title}>Home</h1>
-          </Row>
-          <Row>
-            <Col xs={6} md={6}>
-              <div className={styles.img}></div>
-            </Col>
-            <Col xs={6} md={6}>
-              <div className={styles.img}></div>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} md={12}>
-              <p>We are upbeat, resourceful, and friendly. We motivate and demonstrate
-              a can-do attitude to show our customers what good things are possible.
-              We know that innovating and getting things done is messy, we acknowledge
-              that, and then focus on the solutions together.</p>
-              <p>We are not delusional. We know that we make sophisticated, and at
-              times complicated tools that take a little time to master. So we dont
-              over-promise when it comes to the learning curve. We strive to simplify
-              the path and explain the best way forward.</p>
-              <p>We make people more productive and less stressed. We cant
-              solve every problem a team has, but we empathize and give it our
-              best shot.</p>
-            </Col>
-          </Row>
-        </Grid>
+        <div className={styles.hometitle}>
+          <div className={styles.container}>
+            <h1 className={styles.title}>Evernote Brand Guide</h1>
+          </div>
+        </div>
+        <div className={styles.container}>
+          <Grid fluid>
+            <Row>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img}></div>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
       </Layout>
     );
   }
