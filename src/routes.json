@@ -11,7 +11,7 @@
   },
   {
     "path": "/about",
-    "page": "./about"
+    "page": "./views/about"
   },
   {
     "path": "/tasks/:status(pending|completed)?",
