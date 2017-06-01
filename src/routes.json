@@ -1,12 +1,12 @@
 [
   {
     "path": "/",
-    "page": "./home",
+    "page": "./views/home",
     "chunk": "main"
   },
   {
     "path": "/error",
-    "page": "./error",
+    "page": "./views/error",
     "chunk": "main"
   },
   {
@@ -15,6 +15,6 @@
   },
   {
     "path": "/tasks/:status(pending|completed)?",
-    "page": "./home"
+    "page": "./views/home"
   }
 ]

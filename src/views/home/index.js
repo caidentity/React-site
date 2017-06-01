@@ -9,11 +9,11 @@
  */
 
 import React from 'react';
-import Layout from '../../components/Layout';
+import Layout from '../../../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
-import styles from '../assets/app.css';
+import styles from '../../assets/app.css';
 import classnames from 'classnames';
 
 class HomePage extends React.Component {
