@@ -1,8 +1,8 @@
 /**
-* React Static Boilerplate
-* https://github.com/kriasoft/react-static-boilerplate
+* React Site
 *
-* Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+*
+* Copyright © 2017-present Craig Aucutt. All rights reserved.
 *
 * This source code is licensed under the MIT license found in the
 * LICENSE.txt file in the root directory of this source tree.
@@ -25,7 +25,7 @@ header .logo {
   width: 36px;
   height: 36px;
   background-size: 36px 36px;
-  background-image: url('/logo-nav.png');
+  background-image: url('/img/logo-nav.png');
   margin: 110px 10px 0px;
 }
 header .toggle {
@@ -60,28 +60,30 @@ header span {
   color: #aaa;
   font-size: 12px;
 }
-
+.fixednav {
+  position: fixed;
+}
 @media screen and (max-width: 1000px) {
   header {
     display: flex;
     position: fixed;
     top: 0;
-    background: #f7f7f7;
     width: 100%;
     height: 44px;
+    background: #f7f7f7;
     z-index: 4;
     color: #000;
-    display: flex;
   }
   header .toggle {
     position: absolute;
-    right: 20px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #ccc;
+    right: 20px;
+    width: 36px;
+    height: 36px;
     float: right;
     margin: 11px 0px;
+    background-size: 36px 36px;
+    background-image: url('/img/nav-toggle.png');
   }
   header .logo {
     float: left;

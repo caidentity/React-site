@@ -10,8 +10,12 @@
     "chunk": "main"
   },
   {
-    "path": "/about",
-    "page": "./views/about"
+    "path": "/logo",
+    "page": "./views/logo"
+  },
+  {
+    "path": "/assets",
+    "page": "./views/brandassets"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

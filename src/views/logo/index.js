@@ -1,8 +1,8 @@
 /**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
+ * React Site
+ * 
  *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+ * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
@@ -16,10 +16,10 @@ import s from './styles.css';
 import styles from '../../assets/app.css';
 import classnames from 'classnames';
 
-class AboutPage extends React.Component {
+class LogoPage extends React.Component {
 
   componentDidMount() {
-    document.title = "Logo Guidelines";
+    document.title = "Our Logo";
   }
 
   render() {
@@ -59,4 +59,4 @@ class AboutPage extends React.Component {
 
 }
 
-export default AboutPage;
+export default LogoPage;

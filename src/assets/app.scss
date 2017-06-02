@@ -1,9 +1,51 @@
 
 .img {
   background: #F2F2F2;
-  width:100%;
-  height:80px;
+  width: 100%;
+  height: 80px;
   margin: 5px 0px;
+}
+
+/*--- Brand asset --*/
+
+.brandasset {
+  position: relative;
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+  }
+  img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 5px 0px;
+    transition: .5s ease;
+    z-index: 1;
+    margin: 0;
+  }
+  .overlay {
+    transition: .5s ease;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+  }
+  span {
+    position: absolute;
+    margin: 0px 5px;
+    right: 10px;
+    top: 10px;
+  }
+  h5 {
+    left: 10px;
+    top: 10px;
+    margin: 10px;
+  }
+}
+.brandasset:hover .overlay {
+  opacity: 1;
 }
 
 /*--- GLOBAL --*/
@@ -38,6 +80,7 @@ main {
   .title {
     padding: 100px 20px 0px;
     margin: 0;
+    font-size: 54px;
     font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
   }
 }
@@ -51,6 +94,30 @@ main {
   .title {
     padding: 180px 0px 0px;
     margin: 0;
+    font-size: 54px;
     font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
   }
+}
+
+
+/*--- TYPE ----*/
+h1 {
+  font-size: 42px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+}
+h2 {
+  font-size: 30px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+}
+h3 {
+  font-size: 24px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+}
+h4 {
+  font-size: 18px;
+  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+}
+h5 {
+  font-size: 14px;
+  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
 }
