@@ -16,6 +16,16 @@ import s from './styles.css';
 import styles from '../../assets/app.css';
 import classnames from 'classnames';
 
+function Brandasset(props) {
+  return  <div className={styles.brandasset}>
+            <img src={props.thumburl}/>
+            <div className={styles.overlay}>
+              <h5>{props.name}</h5>
+              <span>download</span>
+            </div>
+          </div>;
+}
+
 class AssetPage extends React.Component {
 
   componentDidMount() {
@@ -34,108 +44,76 @@ class AssetPage extends React.Component {
           <Grid fluid>
             <Row>
               <Col xs={12} md={12}>
-                <p>We are upbeat, resourceful, and friendly. We motivate and demonstrate
-                a can-do attitude to show our customers what good things are possible.
-                We know that innovating and getting things done is messy, we acknowledge
-                that, and then focus on the solutions together.</p>
+                <p>Thanks for your interest in Evernote. We have a few guidelines
+                for using our brand resources—please take a moment to familiarize
+                yourself with them. You can download individual assets in each
+                section. If you want everything, use the button below to
+                download a .zip file:</p>
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2>Our logo</h2>
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/logo-1.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Logo</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg"/>
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/logo-2.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Logo</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-2.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/logo-3.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Logo</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-3.jpg" />
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2>The office</h2>
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/office-1.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Redwood city office</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/office-2.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Redwood city office</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-2.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/office-3.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Redwood city office</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-3.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-2.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-3.jpg" />
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2>Products</h2>
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/product-1.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>iPhone</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/product-2.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>iPhone</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="iOS" thumburl="/img/assets/product-2.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/product-3.jpg'}/>
-                <div className={styles.overlay}>
-                  <h5>Desktop</h5>
-                  <span>download</span>
-                </div>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Desktop" thumburl="/img/assets/product-3.jpg" />
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2>Executive team</h2>
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/team-1.jpg'}/>
-                <div className={styles.overlay}><span>download</span></div>
-                <h5>Chris ONeil</h5>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/team-2.jpg'}/>
-                <div className={styles.overlay}><span>download</span></div>
-                <h5>Phil Libin</h5>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Phil Libin" thumburl="/img/assets/team-2.jpg" />
               </Col>
-              <Col xs={12} md={4} className={styles.brandasset}>
-                <img src={'/img/assets/team-3.jpg'}/>
-                <div className={styles.overlay}><span>download</span></div>
-                <h5>Michelle Wagner</h5>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Michelle Wagner" thumburl="/img/assets/team-3.jpg" />
               </Col>
             </Row>
           </Grid>

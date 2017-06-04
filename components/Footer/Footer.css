@@ -1,6 +1,6 @@
 /**
 * React Site
-* 
+*
 *
 * Copyright © 2017-present Craig Aucutt. All rights reserved.
 *
@@ -10,6 +10,28 @@
 
 footer {
   background: #f7f7f7;
-  padding: 40px 0px;
+  padding: 70px 0px 90px;
   margin-top: 140px;
+}
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  color: #000;
+  margin: 0px 10px;
+  float: left;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+footer .footerleft {
+  float: left;
+  margin: 0px 20px;
+}
+footer .footerright {
+  float: right;
+  margin: 0px 20px;
 }
