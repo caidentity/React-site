@@ -1,69 +1,11 @@
+@import "./kit/brandasset.scss";
+@import "./kit/type.scss";
 
 .img {
   background: #F2F2F2;
   width: 100%;
   height: 80px;
   margin: 5px 0px;
-}
-
-/*--- Brand asset --*/
-
-.brandasset {
-  position: relative;
-  border-radius: 2px;
-  cursor: -moz-zoom-in;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-  margin: 10px 0px;
-  transition: opacity 0.5s,transform 0.5s ease;
-  -webkit-transition: opacity 0.5s,transform 0.5s ease;
-  &:hover {
-    box-shadow: 2px 8px 20px 0 rgba(31,32,68,.25);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transition: opacity 0.5s,transform 0.5s ease;
-    -webkit-transition: opacity 0.5s,transform 0.5s ease;
-    img {
-      opacity: 0.3;
-    }
-  }
-  img {
-    position: relative;
-    width: 100%;
-    min-width: 100%;
-    margin: 5px 0px;
-    border-radius: 2px;
-    z-index: 1;
-    margin: 0;
-    transition: opacity 0.5s,transform 0.5s ease;
-    -webkit-transition: opacity 0.5s,transform 0.5s ease;
-  }
-  .overlay {
-    position: absolute;
-    top: 10px;
-    z-index: 2;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 0.5s,transform 0.5s ease;
-    -webkit-transition: opacity 0.5s,transform 0.5s ease;
-  }
-  span {
-    position: absolute;
-    margin: 0px 5px;
-    right: 10px;
-    top: 10px;
-  }
-  h5 {
-    left: 10px;
-    top: 10px;
-    margin: 10px;
-    font-size: 18px;
-    max-width: 50%;
-    line-height: 24px;
-  }
-}
-.brandasset:hover .overlay {
-  opacity: 1;
 }
 
 /*--- GLOBAL --*/
@@ -145,61 +87,4 @@ main {
     transform: translateY(50px);
     -webkit-transform: translateY(50px);
   }
-}
-
-
-/*--- TYPE ----*/
-h1 {
-  font-size: 42px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
-}
-h2 {
-  margin: 110px 0px 10px;
-  font-size: 30px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
-  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  transform: translateY(50px);
-  -webkit-transform: translateY(50px);
-  opacity: 0;
-}
-h2[data-emergence=hidden] {
-  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  transform: translateY(50px);
-  opacity: 0;
-}
-h2[data-emergence=visible] {
-  transform: translateY(-50px);
-  -webkit-transform: translateY(-50px);
-  visibility: visible;
-  opacity: 1;
-}
-.revealed {
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  visibility: visible;
-}
-.revealer {
-  transform: translateY(50px);
-  -webkit-transform: translateY(50px);
-  visibility: visible;
-}
-h3 {
-  font-size: 24px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
-}
-h4 {
-  font-size: 18px;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
-}
-h5 {
-  font-size: 14px;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
-}
-p {
-  font-size: 14px;
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
-  line-height: 30px;
-  color: #777b85;
 }

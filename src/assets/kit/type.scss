@@ -1,0 +1,56 @@
+
+/*--- TYPE ----*/
+h1 {
+  font-size: 42px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+}
+h2 {
+  margin: 110px 0px 10px;
+  font-size: 30px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  opacity: 0;
+}
+h2[data-emergence=hidden] {
+  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(50px);
+  opacity: 0;
+}
+h2[data-emergence=visible] {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  visibility: visible;
+  opacity: 1;
+}
+.revealed {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  visibility: visible;
+}
+.revealer {
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  visibility: visible;
+}
+h3 {
+  font-size: 24px;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+}
+h4 {
+  font-size: 18px;
+  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+}
+h5 {
+  font-size: 14px;
+  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+}
+p {
+  font-size: 14px;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  line-height: 30px;
+  color: #777b85;
+}

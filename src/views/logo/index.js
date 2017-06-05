@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
@@ -27,7 +27,7 @@ class LogoPage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
           <div className={styles.container}>
-            <h1 className={styles.title}>Our Logo</h1>
+          <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Our Logo</h1>
           </div>
         </div>
         <div className={styles.container}>

@@ -17,7 +17,7 @@ import styles from '../../assets/app.css';
 import classnames from 'classnames';
 
 function Brandasset(props) {
-  return  <div className={styles.brandasset}>
+  return  <div className={styles.brandasset+ ' ' + "revealer"} data-emergence="hidden">
             <img src={props.thumburl}/>
             <div className={styles.overlay}>
               <h5>{props.name}</h5>
@@ -56,7 +56,7 @@ class AssetPage extends React.Component {
               <h2 className={styles.revealer} data-emergence="hidden">Our logo</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg"/>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-2.jpg" />
