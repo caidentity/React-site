@@ -26,8 +26,10 @@ class Header extends React.Component {
   render() {
     return (
       <header className={`sidebar ${s.header}`} ref={node => (this.root = node)}>
+      <div className={`${s.logocontainer}`}>
+      <Link className={`title ${s.logo}`} to="/">  </Link>
+      </div>
         <div className={`${s.fixednav}`}>
-          <Link className={`title ${s.logo}`} to="/">  </Link>
           <div className={`${s.toggle}`}></div>
           <Navigation />
         </div>

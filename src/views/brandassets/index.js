@@ -87,6 +87,15 @@ class AssetPage extends React.Component {
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-6.jpg" />
               </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-7.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-8.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-9.jpg" />
+              </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>

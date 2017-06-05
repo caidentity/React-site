@@ -9,23 +9,31 @@
 */
 
 header {
-  display: flex;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0px;
   width: 240px;
-  height: 100%;
-  z-index: 4;
+  z-index: 1;
   color: #000;
+  background: #fff;
 }
-
-header .logo {
-  text-decoration: none;
-  float: left;
+header .logocontainer {
   display: block;
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  margin: 0 auto;
+  width: 50px;
+}
+header .logo {
+  display: block;
+  position: relative;
   width: 36px;
   height: 36px;
   background-size: 36px 36px;
   background-image: url('/img/logo-nav.png');
-  margin: 110px 10px 0px;
+  margin: 90px auto 0px;
 }
 header .toggle {
   display: none;
@@ -33,7 +41,7 @@ header .toggle {
 header nav {
   position: absolute;
   left: 0;
-  top: 160px;
+  top: 80px;
   display: block;
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
 }
@@ -72,6 +80,7 @@ header span {
     background: #fff;
     z-index: 4;
     color: #000;
+    margin: 0;
   }
   .fixednav {
     position: fixed;

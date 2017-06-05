@@ -9,9 +9,11 @@
 */
 
 footer {
+  position: relative;
   background: #f7f7f7;
   padding: 70px 0px 90px;
   margin-top: 140px;
+  z-index: 99;
 }
 footer ul {
   list-style-type: none;
