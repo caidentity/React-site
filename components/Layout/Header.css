@@ -32,7 +32,7 @@ header .logo {
   width: 36px;
   height: 36px;
   background-size: 36px 36px;
-  background-image: url('/img/logo-nav.png');
+  background-image: url('/img/nav/logo-nav.png');
   margin: 90px auto 0px;
 }
 header .toggle {
@@ -95,7 +95,7 @@ header span {
     right: 10px;
     margin: 9px 0px;
     background-size: 36px 36px;
-    background-image: url('/img/nav-toggle.png');
+    background-image: url('/img/nav/nav-toggle.png');
   }
   header .logocontainer {
     display: block;

@@ -11,18 +11,19 @@
 footer {
   position: relative;
   background: #f7f7f7;
-  padding: 70px 0px 90px;
+  padding: 90px 0px 110px;
   margin-top: 140px;
   z-index: 99;
 }
 footer ul {
   list-style-type: none;
+  margin: 0;
 }
 
 footer li {
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
   color: #000;
-  margin: 0px 10px;
+  margin: 0px 15px;
   float: left;
 }
 footer a {
@@ -36,4 +37,16 @@ footer .footerleft {
 footer .footerright {
   float: right;
   margin: 0px 20px;
+}
+footer img {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 1000px) {
+  footer .footerleft {
+  }
+  footer .footerright {
+    margin: 0 auto;
+  }
 }

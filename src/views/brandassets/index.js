@@ -38,6 +38,7 @@ class AssetPage extends React.Component {
         <div className={styles.pagetitle}>
           <div className={styles.container}>
             <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
+            <img className={styles.icon} src={'/img/pageicon/pageicon-logo.png'}></img>
           </div>
         </div>
         <div className={styles.container}>

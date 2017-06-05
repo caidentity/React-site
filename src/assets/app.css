@@ -56,7 +56,7 @@
   opacity: 1;
   visibility: visible; }
   .brandasset[data-emergence=visible]:hover {
-    box-shadow: 2px 8px 20px 0 rgba(31, 32, 68, 0.25);
+    box-shadow: 0px 5px 20px 0 rgba(31, 32, 68, 0.15);
     transform: scale(1.05) translateY(24px);
     -webkit-transform: scale(1.05) translateY(-24px);
     transition: opacity 0.5s,transform 0.5s ease;
@@ -72,8 +72,8 @@ h1 {
   font-family: "gotham-light", helevetica neue, helvetica, sans-serif; }
 
 h2 {
-  margin: 110px 0px 10px;
-  font-size: 30px;
+  margin: 140px 0px 10px;
+  font-size: 32px;
   font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
   transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -149,10 +149,19 @@ main {
   height: 350px;
   max-height: 350px;
   margin-bottom: 40px;
-  background: #F2F2F2; }
+  background: #fbfbfb; }
+  .pagetitle .icon {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 120px;
+    margin: 100px 20px 0px;
+    padding: 0px; }
   .pagetitle .title {
-    padding: 170px 20px 0px;
+    display: inline-block;
+    float: left;
     margin: 0;
+    padding: 170px 20px 0px;
     font-size: 55px;
     font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
     transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -176,7 +185,7 @@ main {
   height: 455px;
   max-height: 455px;
   margin-bottom: 20px;
-  background: #F2F2F2;
+  background: #fbfbfb;
   margin-top: 0px; }
   .hometitle .title {
     padding: 180px 0px 0px;

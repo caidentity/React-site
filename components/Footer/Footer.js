@@ -25,11 +25,10 @@ function Footer() {
     </div>
     <div className={s.footerright}>
       <ul>
-        <li><Link to="">Follow</Link></li>
-        <li><Link to="">M</Link></li>
-        <li><Link to="">F</Link></li>
-        <li><Link to="">T</Link></li>
-        <li><Link to="">I</Link></li>
+        <li><Link to=""><img className={s.footericon} src={'/img/follow/facebook.png'}></img></Link></li>
+        <li><Link to=""><img className={s.footericon} src={'/img/follow/twitter.png'}></img></Link></li>
+        <li><Link to=""><img className={s.footericon} src={'/img/follow/medium.png'}></img></Link></li>
+        <li><Link to=""><img className={s.footericon} src={'/img/follow/instagram.png'}></img></Link></li>
       </ul>
       </div>
     </footer>
