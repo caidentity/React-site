@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
@@ -27,7 +27,7 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.hometitle}>
           <div className={styles.container}>
-            <h1 className={styles.title}>Evernote Brand Guide</h1>
+            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Evernote Brand Guide</h1>
           </div>
         </div>
         <div className={styles.container}>

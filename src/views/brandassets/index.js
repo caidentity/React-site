@@ -37,7 +37,7 @@ class AssetPage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
           <div className={styles.container}>
-            <h1 className={styles.title}>Brand Assets</h1>
+            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
           </div>
         </div>
         <div className={styles.container}>
@@ -53,7 +53,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2>Our logo</h2>
+              <h2 className={styles.revealer} data-emergence="hidden">Our logo</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg"/>
@@ -67,7 +67,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2>The office</h2>
+                <h2 className={styles.revealer} data-emergence="hidden">The office</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
@@ -90,7 +90,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2>Products</h2>
+                <h2 className={styles.revealer} data-emergence="hidden">Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -104,7 +104,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2>Executive team</h2>
+              <h2 className={styles.revealer} data-emergence="hidden">Executive team</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />

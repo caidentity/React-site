@@ -21,5 +21,19 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     <%_ } _%>
+    <script src="/emerge.js"></script>
+    <script>
+    emergence.init({
+    callback: function(element, state) {
+      if (state === 'visible') {
+        console.log('Element is visible.');
+      } else if (state === 'reset') {
+        console.log('Element is hidden with reset.');
+      } else if (state === 'noreset') {
+        console.log('Element is hidden with NO reset.');
+      }
+    }
+    });
+    </script>
   </body>
 </html>
