@@ -79,13 +79,13 @@ class AssetPage extends React.Component {
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-3.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-4.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Redwood city office" thumburl="/img/assets/office-2.jpg" />
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-5.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Redwood city office" thumburl="/img/assets/office-3.jpg" />
+                <Brandasset name="Redwood city office" thumburl="/img/assets/office-6.jpg" />
               </Col>
             </Row>
             <Row>
@@ -101,6 +101,15 @@ class AssetPage extends React.Component {
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Desktop" thumburl="/img/assets/product-3.jpg" />
               </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="iOS" thumburl="/img/assets/product-4.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="iOS" thumburl="/img/assets/product-5.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Desktop" thumburl="/img/assets/product-6.jpg" />
+              </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
@@ -114,6 +123,15 @@ class AssetPage extends React.Component {
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Michelle Wagner" thumburl="/img/assets/team-3.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Andrew Malcom" thumburl="/img/assets/team-4.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Anirban Kundu" thumburl="/img/assets/team-5.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Nate Fortin" thumburl="/img/assets/team-6.jpg" />
               </Col>
             </Row>
           </Grid>

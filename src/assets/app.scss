@@ -10,6 +10,7 @@
 
 .brandasset {
   position: relative;
+  border-radius: 2px;
   cursor: -moz-zoom-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
@@ -18,8 +19,8 @@
   -webkit-transition: opacity 0.5s,transform 0.5s ease;
   &:hover {
     box-shadow: 2px 8px 20px 0 rgba(31,32,68,.25);
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
     transition: opacity 0.5s,transform 0.5s ease;
     -webkit-transition: opacity 0.5s,transform 0.5s ease;
     img {
