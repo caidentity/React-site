@@ -10,6 +10,7 @@
 
 import React from 'react';
 import Layout from '../../../components/Layout';
+import Link from '../../../components/Link';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
@@ -21,7 +22,7 @@ function Brandasset(props) {
             <img src={props.thumburl}/>
             <div className={styles.overlay}>
               <h5>{props.name}</h5>
-              <span>download</span>
+              <Link to="/"><span></span></Link>
             </div>
           </div>;
 }
@@ -38,18 +39,20 @@ class AssetPage extends React.Component {
         <div className={styles.pagetitle}>
           <div className={styles.container}>
             <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
-            <img className={styles.icon} src={'/img/pageicon/pageicon-logo.png'}></img>
           </div>
         </div>
         <div className={styles.container}>
           <Grid fluid>
             <Row>
-              <Col xs={12} md={12}>
+              <Col xs={12} md={9}>
                 <p>Thanks for your interest in Evernote. We have a few guidelines
-                for using our brand resources—please take a moment to familiarize
+                for using our brand resources, please take a moment to familiarize
                 yourself with them. You can download individual assets in each
-                section. If you want everything, use the button below to
-                download a .zip file:</p>
+                section. If you want everything, use this button to download
+                a .zip file</p>
+              </Col>
+              <Col xs={12} md={3}>
+                <p>button</p>
               </Col>
             </Row>
             <Row>
@@ -57,7 +60,7 @@ class AssetPage extends React.Component {
               <h2 className={styles.revealer} data-emergence="hidden">Our logo</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" />
+                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/" />
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-2.jpg" />

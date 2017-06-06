@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *

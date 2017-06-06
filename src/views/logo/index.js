@@ -27,7 +27,8 @@ class LogoPage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
           <div className={styles.container}>
-          <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Our Logo</h1>
+            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Our Logo</h1>
+            <img className={styles.icon} src={'/img/pageicon/pageicon-logo.png'}></img>
           </div>
         </div>
         <div className={styles.container}>
@@ -42,13 +43,47 @@ class LogoPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <div className={styles.img}></div>
+                <h2 className={styles.revealer} data-emergence="hidden">Lockups</h2>
+              </Col>
+              <Col xs={12} md={12}>
+                <div className={s.lockup}><img src="/img/assets/logo-1.jpg"></img></div>
               </Col>
               <Col xs={12} md={6}>
-                <div className={styles.img}></div>
+                <div className={s.lockup}><img src="/img/assets/logo-2.jpg"></img></div>
               </Col>
               <Col xs={12} md={6}>
-                <div className={styles.img}></div>
+                <div className={s.lockup}><img src="/img/assets/logo-3.jpg"></img></div>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={4}>
+                <h5>Horizontal Lockup</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <h5>Logo Mark</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <h5>Stacked Lockup</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={12}>
+                <h2 className={styles.revealer} data-emergence="hidden">Colors</h2>
+              </Col>
+              <Col xs={12} md={4}>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={12}>
+                <h2 className={styles.revealer} data-emergence="hidden">Clear space</h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={12}>
+                <h2 className={styles.revealer} data-emergence="hidden">Do's And Don'ts</h2>
               </Col>
             </Row>
           </Grid>

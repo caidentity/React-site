@@ -114,7 +114,7 @@
 
     // Don't continue if element's closest parent is hidden
     if (isHidden(elem)) {
-      return false;
+      return true;
     }
 
     // Get information from element and container
