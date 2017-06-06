@@ -176,14 +176,12 @@ main {
     transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: translateY(50px);
-    -webkit-transform: translateY(50px);
-    opacity: 0; }
+    -webkit-transform: translateY(50px); }
   .pagetitle .title[data-emergence=hidden] {
     transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: translateY(50px);
-    -webkit-transform: translateY(50px);
-    opacity: 0; }
+    -webkit-transform: translateY(50px); }
   .pagetitle .title[data-emergence=visible] {
     transform: translateY(-50px);
     -webkit-transform: translateY(-50px);
@@ -203,11 +201,15 @@ main {
     font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
     transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: translateY(-50px); }
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px); }
   .hometitle .title[data-emergence=hidden] {
     transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: translateY(-50px); }
-  .hometitle .title[data-emergence=visible] {
     transform: translateY(50px);
     -webkit-transform: translateY(50px); }
+  .hometitle .title[data-emergence=visible] {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    opacity: 1;
+    visibility: visible; }
