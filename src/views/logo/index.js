@@ -33,6 +33,7 @@ class LogoPage extends React.Component {
             <img className={styles.icon} src={'/img/pageicon/pageicon-logo.png'}></img>
           </div>
         </div>
+        <div className={styles.frame}>
         <div className={styles.container}>
           <Grid fluid>
             <Row>
@@ -100,6 +101,7 @@ class LogoPage extends React.Component {
             </Col>
             </Row>
           </Grid>
+        </div>
         </div>
       </Layout>
     );

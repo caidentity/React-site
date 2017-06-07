@@ -12,7 +12,7 @@ header {
   position: fixed;
   top: 0;
   bottom: 0;
-  margin: 0px;
+  margin: 30px;
   width: 240px;
   z-index: 1;
   color: #000;
@@ -21,7 +21,7 @@ header {
 header .logocontainer {
   display: block;
   position: relative;
-  background: #fff;
+  background: #2DBE60;
   padding: 10px;
   margin: 0 auto;
   width: 50px;
@@ -32,8 +32,8 @@ header .logo {
   width: 36px;
   height: 36px;
   background-size: 36px 36px;
-  background-image: url('/img/nav/logo-nav.png');
-  margin: 90px auto 0px;
+  background-image: url('/img/nav/logo-nav-white.png');
+  margin: 80px auto 0px;
 }
 header .toggle {
   display: none;
@@ -104,10 +104,12 @@ header span {
     padding: 0;
     margin: 0;
     width: 50px;
+    background: #fff;
   }
   header .logo {
     float: left;
     margin: 3px 0px;
+    background-image: url('/img/nav/logo-nav.png');
   }
   header nav {
     display: none;

@@ -30,6 +30,7 @@ class HomePage extends React.Component {
             <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Evernote Brand Guide</h1>
           </div>
         </div>
+        <div className={styles.frame}>
         <div className={styles.container}>
           <Grid fluid>
             <Row>
@@ -55,6 +56,7 @@ class HomePage extends React.Component {
               </Col>
             </Row>
           </Grid>
+        </div>
         </div>
       </Layout>
     );

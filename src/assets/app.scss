@@ -1,6 +1,45 @@
 @import "./kit/brandasset.scss";
 @import "./kit/type.scss";
 
+/*--- GLOBAL --*/
+body {
+  background: #F2F4F6;
+}
+
+main {
+ margin-left: 270px;
+}
+.frame {
+ background: #fff;
+ margin: 0px 30px;
+ padding: 80px 0px;
+}
+
+.container {
+ margin: 0 auto;
+ max-width: 902px;
+ width: 902px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background: #fff;
+  }
+ main {
+   margin-left: 0px;
+ }
+ .frame {
+  background: #fff;
+  margin: 0px;
+  padding: 80px 0px;
+ }
+ .container {
+   margin: 0 auto;
+   max-width: 96%;
+   width: 96%;
+ }
+}
+
 .img {
   background: #F2F2F2;
   width: 100%;
@@ -8,27 +47,6 @@
   margin: 5px 0px;
 }
 
-/*--- GLOBAL --*/
-main {
-  margin-left: 240px;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 902px;
-  width: 902px;
-}
-
-@media screen and (max-width: 1000px) {
-  main {
-    margin-left: 0px;
-  }
-  .container {
-    margin: 0 auto;
-    max-width: 90%;
-    width: 90%;
-  }
-}
 
 /*--- PAGE TITLES --*/
 
@@ -36,7 +54,6 @@ main {
   height: 350px;
   max-height: 350px;
   margin-bottom: 40px;
-  background: #fbfbfb;
   .icon {
     display: inline-block;
     float: right;
@@ -49,7 +66,7 @@ main {
     display: inline-block;
     float: left;
     margin: 0;
-    padding: 170px 20px 0px;
+    padding: 190px 20px 0px;
     font-size: 55px;
     font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
     transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
@@ -75,7 +92,6 @@ main {
   height: 455px;
   max-height: 455px;
   margin-bottom: 20px;
-  background: #fbfbfb;
   margin-top: 0px;
   .title {
     padding: 180px 0px 0px;
