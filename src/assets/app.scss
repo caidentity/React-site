@@ -100,3 +100,16 @@ main {
     visibility: visible;
   }
 }
+
+[data-emergence=hidden] {
+  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+}
+[data-emergence=visible] {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  opacity: 1;
+  visibility: visible;
+}

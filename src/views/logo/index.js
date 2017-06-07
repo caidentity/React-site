@@ -46,13 +46,13 @@ class LogoPage extends React.Component {
                 <h2 className={styles.revealer} data-emergence="hidden">Lockups</h2>
               </Col>
               <Col xs={12} md={12}>
-                <div className={s.lockup}><img src="/img/assets/logo-1.jpg"></img></div>
+                <div className={s.lockup+ ' ' + "revealer"} data-emergence="hidden"><img src="/img/assets/logo-1.jpg"></img></div>
               </Col>
               <Col xs={12} md={6}>
-                <div className={s.lockup}><img src="/img/assets/logo-2.jpg"></img></div>
+                <div className={s.lockup+ ' ' + "revealer"} data-emergence="hidden"><img src="/img/assets/logo-2.jpg"></img></div>
               </Col>
               <Col xs={12} md={6}>
-                <div className={s.lockup}><img src="/img/assets/logo-3.jpg"></img></div>
+                <div className={s.lockup+ ' ' + "revealer"} data-emergence="hidden"><img src="/img/assets/logo-3.jpg"></img></div>
               </Col>
             </Row>
             <Row>
@@ -79,6 +79,12 @@ class LogoPage extends React.Component {
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.revealer} data-emergence="hidden">Clear space</h2>
+              </Col>
+              <Col xs={12} md={6}>
+                <div className={s.spacing+ ' ' + "revealer"}  data-emergence="hidden"><img src="/img/guide/logo/logospacing-1.jpg"></img></div>
+              </Col>
+              <Col xs={12} md={6}>
+                <div className={s.spacing+ ' ' + "revealer"}  data-emergence="hidden"><img src="/img/guide/logo/logospacing-2.jpg"></img></div>
               </Col>
             </Row>
             <Row>

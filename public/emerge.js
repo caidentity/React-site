@@ -205,9 +205,11 @@
       // Listeners for scroll and resize events
       // Invoke useThrottle()
       if (document.addEventListener) {
+        viewport.addEventListener('load', useThrottle, false);
         viewport.addEventListener('scroll', useThrottle, false);
         viewport.addEventListener('resize', useThrottle, false);
       } else {
+        viewport.attachEvent('onload', useThrottle);
         viewport.attachEvent('onscroll', useThrottle);
         viewport.attachEvent('onresize', useThrottle);
       }
@@ -258,9 +260,11 @@
 
     // Remove and detach event listeners
     if (document.removeEventListener) {
+      viewport.addEventListener('load', useThrottle, false);
       viewport.removeEventListener('scroll', useThrottle, false);
       viewport.removeEventListener('resize', useThrottle, false);
     } else {
+      viewport.attachEvent('onload', useThrottle);
       viewport.detachEvent('onscroll', useThrottle);
       viewport.detachEvent('onresize', useThrottle);
     }
