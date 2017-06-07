@@ -9,8 +9,9 @@
  */
 
 import React from 'react';
-import Layout from '../../../components/Layout';
-import Link from '../../../components/Link';
+import Layout from '../../components/Layout';
+import Link from '../../components/Link';
+import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
@@ -47,12 +48,14 @@ class AssetPage extends React.Component {
               <Col xs={12} md={9}>
                 <p>Thanks for your interest in Evernote. We have a few guidelines
                 for using our brand resources, please take a moment to familiarize
-                yourself with them. You can download individual assets in each
+                yourself with <Link to="/logo">them</Link>. You can download individual assets in each
                 section. If you want everything, use this button to download
-                a .zip file</p>
+                all</p>
               </Col>
-              <Col xs={12} md={3}>
-                <p>button</p>
+              <Col xs={12} md={1}>
+              </Col>
+              <Col xs={12} md={2}>
+                <Link to="/"><ReactButton color='border' size='normal'>Download all</ReactButton></Link>
               </Col>
             </Row>
             <Row>

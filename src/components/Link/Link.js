@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
@@ -9,7 +9,7 @@
  */
 
 import React, { PropTypes } from 'react';
-import history from '../../src/history';
+import history from '../../history';
 
 class Link extends React.Component {
 

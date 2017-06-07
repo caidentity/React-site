@@ -52,3 +52,7 @@ p {
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
   line-height: 30px;
   color: #777b85; }
+
+a {
+  color: #000;
+  text-decoration: none; }

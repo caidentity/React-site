@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import Layout from '../../../components/Layout';
+import Layout from '../../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';

@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
@@ -10,7 +10,7 @@
 
 import React from 'react';
 import history from '../../history';
-import Link from '../../../components/Link';
+import Link from '../../components/Link';
 import s from './styles.css';
 
 class ErrorPage extends React.Component {

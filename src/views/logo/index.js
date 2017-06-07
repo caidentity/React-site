@@ -9,7 +9,9 @@
  */
 
 import React from 'react';
-import Layout from '../../../components/Layout';
+import Layout from '../../components/Layout';
+import Link from '../../components/Link';
+import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
@@ -91,6 +93,11 @@ class LogoPage extends React.Component {
               <Col xs={12} md={12}>
                 <h2 className={styles.revealer} data-emergence="hidden">Do's And Don'ts</h2>
               </Col>
+            </Row>
+            <Row>
+            <Col xs={12} md={12}>
+              <Link to="/"><ReactButton color='border'size='normal'>Download all logo assets</ReactButton></Link>
+            </Col>
             </Row>
           </Grid>
         </div>
