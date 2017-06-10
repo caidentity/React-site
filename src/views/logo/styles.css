@@ -23,8 +23,11 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  padding: 0;
-  max-height: 160px;
+  padding: 10px 0px;
+  max-height: 215px;
+}
+.lockup.darkbg {
+  background: #596062;
 }
 .spacing {
   width: 100%;

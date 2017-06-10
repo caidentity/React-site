@@ -61,7 +61,7 @@ class LogoPage extends React.Component {
             <Row>
               <Col xs={12} md={4}>
                 <h5>Horizontal Lockup</h5>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                <p>Use with left aligned layouts and when the vertical space is constrained. Examples being One-pagers, email, web navigation</p>
               </Col>
               <Col xs={12} md={4}>
                 <h5>Logo Mark</h5>
@@ -69,22 +69,42 @@ class LogoPage extends React.Component {
               </Col>
               <Col xs={12} md={4}>
                 <h5>Stacked Lockup</h5>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                <p>Use with centered layouts and when there is ample vertical space. Examples being Invitations, gift cards, covers</p>
               </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Colors</h2>
-                <h4 className={styles.subhead}>Always use the two-color logo whenever possible. The one-color version
+                <h4 className={styles.subhead} data-emergence="hidden">Always use the two-color logo whenever possible. The one-color version
                 should only be reserved for applications limited by color contrast or printing techniques.</h4>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={6}>
+              <div className={s.lockup} data-emergence="hidden"><img src="/img/guide/logo/logo-stack-dark.png"></img></div>
               </Col>
+              <Col xs={12} md={6}>
+              <div className={s.lockup+ ' ' + s.darkbg} data-emergence="hidden"><img src="/img/guide/logo/logo-stack-transparent.png"></img></div>
+              </Col>
+              <Col xs={12} md={6}>
+              <div className={s.lockup} data-emergence="hidden"><img src="/img/guide/logo/logo-mark-dark.png"></img></div>
+              </Col>
+              <Col xs={12} md={6}>
+              <div className={s.lockup+ ' ' + s.darkbg} data-emergence="hidden"><img src="/img/guide/logo/logo-mark-transparent.png"></img></div>
+              </Col>
+              <Col xs={12} md={6}>
+                <h5>Use whenever possible</h5>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+              </Col>
+              <Col xs={12} md={6}>
+                <h5>Use limitely on dark-tone backgrounds</h5>
+                <p>Use with centered layouts and when there is ample vertical space. Examples being Invitations, gift cards, covers</p>
+              </Col>
+
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Clear space</h2>
-                <h4 className={styles.subhead}> Always maintain this minimum clearspace between the logo and other elements to avoid overcrowding.</h4>
+                <h4 className={styles.subhead} data-emergence="hidden"> Always maintain this minimum clearspace
+                between the logo and other elements to avoid overcrowding.</h4>
               </Col>
               <Col xs={12} md={6}>
                 <div className={s.spacing+ ' ' + "revealer"}  data-emergence="hidden"><img src="/img/guide/logo/logospacing-1.jpg"></img></div>
@@ -95,11 +115,38 @@ class LogoPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Do's And Don'ts</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Crimes</h2>
+                <h4 className={styles.subhead} data-emergence="hidden">To maintain the integrity of the logo,
+                and to promote the consistency of the brand, please do not misuse it. Some logo crimes are listed below.</h4>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-1.jpg"></img></div>
+                <p>Don’t rotate the logo</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-2.jpg"></img></div>
+                <p>Do not add additional elements or attempt to redraw the elephant icon.</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-3.jpg"></img></div>
+                <p>Do not add additional elements or attempt to redraw the elephant icon.</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-4.jpg"></img></div>
+                <p>Do not place the logo on patterns or busy backgrounds.</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-5.jpg"></img></div>
+                <p>Do not change the Evernote service lockups.</p>
+              </Col>
+              <Col xs={12} md={4}>
+                <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-6.jpg"></img></div>
+                <p>Do not change the color-ways.</p>
               </Col>
             </Row>
             <Row>
             <Col xs={12} md={12}>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Download assets</h2>
               <Link to="/"><ReactButton color='border'size='normal'>Download all logo assets</ReactButton></Link>
             </Col>
             </Row>
