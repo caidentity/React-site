@@ -75,8 +75,8 @@ class LogoPage extends React.Component {
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Colors</h2>
-                <h5 className={styles.subhead}>Always use the two-color logo whenever possible. The one-color version
-                should only be reserved for applications limited by color contrast or printing techniques.</h5>
+                <h4 className={styles.subhead}>Always use the two-color logo whenever possible. The one-color version
+                should only be reserved for applications limited by color contrast or printing techniques.</h4>
               </Col>
               <Col xs={12} md={4}>
               </Col>
@@ -84,7 +84,7 @@ class LogoPage extends React.Component {
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Clear space</h2>
-                <h5> Always maintain this minimum clearspace between the logo and other elements to avoid overcrowding.</h5>
+                <h4 className={styles.subhead}> Always maintain this minimum clearspace between the logo and other elements to avoid overcrowding.</h4>
               </Col>
               <Col xs={12} md={6}>
                 <div className={s.spacing+ ' ' + "revealer"}  data-emergence="hidden"><img src="/img/guide/logo/logospacing-1.jpg"></img></div>

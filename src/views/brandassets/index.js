@@ -64,7 +64,7 @@ class AssetPage extends React.Component {
               <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/" />
+                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/"/>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-2.jpg" />
