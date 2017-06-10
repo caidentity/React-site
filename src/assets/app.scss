@@ -1,9 +1,12 @@
 @import "./kit/brandasset.scss";
 @import "./kit/type.scss";
 
+$bodybg: #F2F4F6;
+$green: #2dbe60;
+
 /*--- GLOBAL --*/
 body {
-  background: #F2F4F6;
+  background: $bodybg;
 }
 
 main {
@@ -67,8 +70,8 @@ main {
     float: left;
     margin: 0;
     padding: 190px 20px 0px;
-    font-size: 55px;
-    font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+    font-size: 60px;
+    font-family: "gotham-bold", helevetica neue, helvetica, sans-serif;
     transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
     -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
     transform: translateY(50px);
@@ -94,10 +97,11 @@ main {
   margin-bottom: 20px;
   margin-top: 0px;
   .title {
-    padding: 180px 0px 0px;
+    padding: 200px 0px 0px;
     margin: 0;
-    font-size: 55px;
-    font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+    font-size: 62px;
+    max-width: 400px;
+    font-family: "gotham-bold", helevetica neue, helvetica, sans-serif;
     transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
     -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
     transform: translateY(50px);

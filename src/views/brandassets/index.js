@@ -61,7 +61,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-              <h2 className={styles.revealer} data-emergence="hidden">Our logo</h2>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/" />
@@ -75,7 +75,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2 className={styles.revealer} data-emergence="hidden">The office</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">The office</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
@@ -107,7 +107,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2 className={styles.revealer} data-emergence="hidden">Products</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -130,13 +130,10 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-              <h2 className={styles.revealer} data-emergence="hidden">Executive team</h2>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Executive team</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />
-              </Col>
-              <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Phil Libin" thumburl="/img/assets/team-2.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Michelle Wagner" thumburl="/img/assets/team-3.jpg" />

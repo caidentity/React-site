@@ -17,6 +17,7 @@ header {
   z-index: 1;
   color: #000;
   background: #fff;
+  max-height: 940px;
 }
 header .logocontainer {
   display: block;

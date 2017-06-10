@@ -6,20 +6,22 @@ h1 {
 h2 {
   margin: 140px 0px 10px;
   font-size: 32px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+  font-family: "gotham-light", helevetica neue, helvetica, sans-serif; }
+
+.sectionheader {
   transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(50px);
   -webkit-transform: translateY(50px);
   opacity: 0; }
 
-h2[data-emergence=hidden] {
+.sectionheader[data-emergence=hidden] {
   transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(50px);
   opacity: 0; }
 
-h2[data-emergence=visible] {
+.sectionheader[data-emergence=visible] {
   transform: translateY(-50px);
   -webkit-transform: translateY(-50px);
   visibility: visible;
@@ -40,8 +42,13 @@ h3 {
   font-family: "gotham-light", helevetica neue, helvetica, sans-serif; }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "gotham-medium", helevetica neue, helvetica, sans-serif; }
+
+h4.subhead {
+  font-size: 16px;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  color: #696969; }
 
 h5 {
   font-size: 14px;
