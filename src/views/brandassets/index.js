@@ -61,7 +61,7 @@ class AssetPage extends React.Component {
                 <Link to="/"><ReactButton color='border' size='normal'>Download all</ReactButton></Link>
               </Col>
             </Row>
-            <Row>
+            <Row id="logo">
               <Col xs={12} md={12}>
               <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
               <h4 className={styles.subhead} data-emergence="hidden">Our logos can only be used as permitted by our Trademark Usage Guidelines.</h4>
@@ -85,7 +85,7 @@ class AssetPage extends React.Component {
                 <Brandasset name="Logo" thumburl="/img/assets/logo-6.jpg" />
               </Col>
             </Row>
-            <Row>
+            <Row id="office">
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">The office</h2>
                 <h4 className={styles.subhead} data-emergence="hidden">Don’t worry about needing to snap photos of our office. We have done that for you. Feel free to use these.</h4>
@@ -118,9 +118,9 @@ class AssetPage extends React.Component {
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-9.jpg" />
               </Col>
             </Row>
-            <Row>
+            <Row id="product">
               <Col xs={12} md={12}>
-                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden" id="product">Products</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -141,7 +141,7 @@ class AssetPage extends React.Component {
                 <Brandasset name="Desktop" thumburl="/img/assets/product-6.jpg" />
               </Col>
             </Row>
-            <Row>
+            <Row id="leadership">
               <Col xs={12} md={12}>
               <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Leadership team</h2>
               </Col>

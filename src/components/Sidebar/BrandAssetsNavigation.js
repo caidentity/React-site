@@ -9,6 +9,7 @@
 
 import React from 'react';
 import Link from '../Link';
+import Scrollchor from 'react-scrollchor';
 
 class Navigation extends React.Component {
 
@@ -38,10 +39,10 @@ class Navigation extends React.Component {
     return (
       <nav className="sidebar-nav" ref={node => (this.root = node)}>
         <h5>Assets</h5>
-        <Link className="" to="/">Logo</Link>
-        <Link className="" to="/logo">Office</Link>
-        <Link className="" to="/assets#product">Products</Link>
-        <Link className="" to="/assets">Leadership</Link>
+        <Scrollchor to="#logo">Logo</Scrollchor>
+        <Scrollchor to="#office">Office</Scrollchor>
+        <Scrollchor to="#product">Product</Scrollchor>
+        <Scrollchor to="#leadership">Leadership</Scrollchor>
       </nav>
     );
   }
