@@ -10,7 +10,7 @@
 
 footer {
   position: relative;
-  background: #f7f7f7;
+  background: #fff;
   padding: 90px 0px 110px;
   margin-top: 140px;
   z-index: 99;
@@ -18,10 +18,12 @@ footer {
 footer ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 footer li {
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
   color: #000;
   margin: 0px 15px;
   float: left;
@@ -45,6 +47,10 @@ footer img {
 }
 @media screen and (max-width: 1000px) {
   footer .footerleft {
+    max-width: 90%;
+  }
+  footer ul {
+    display: inherit;
   }
   footer .footerright {
     margin: 0 auto;

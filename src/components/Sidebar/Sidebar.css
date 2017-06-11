@@ -1,0 +1,84 @@
+/**
+* React Site
+*
+*
+* Copyright © 2017-present Craig Aucutt. All rights reserved.
+*
+* This source code is licensed under the MIT license found in the
+* LICENSE.txt file in the root directory of this source tree.
+*/
+
+.sidebar {
+  position: absolute;
+  float: left;
+  top: 0;
+  margin: 0px 30px;
+  width: 190px;
+  color: #000;
+  background: #fff;
+}
+
+.sidebar nav {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  display: block;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  border-right: 1px solid #EFEFEF;
+}
+.sidebar nav h5 {
+  display: block;
+  float: left;
+  color: #000;
+  width: 190px;
+  text-decoration: none;
+  line-height: 30px;
+  padding: 10px 20px;
+}
+.sidebar nav a {
+  width: 190px;
+  display: block;
+  float: left;
+  color: #aaa;
+  text-decoration: none;
+  line-height: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+
+}
+.sidebar nav a:hover {
+  color: #000;
+}
+
+.sidebar span {
+  float: left;
+  margin: 30px 20px 0px;
+  color: #aaa;
+  font-size: 12px;
+}
+.fixednav {
+  position: fixed;
+}
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    z-index: 4;
+    color: #000;
+    margin: 0;
+  }
+  .fixednav {
+    position: fixed;
+    width: 100%;
+  }
+  .sidebar nav {
+    display: none;
+  }
+  .row {
+    padding: 0 10px;
+  }
+}

@@ -10,6 +10,7 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
+import Sidebar from '../../components/Sidebar/Sidebar';
 import Link from '../../components/Link';
 import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -38,12 +39,11 @@ class AssetPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <div className={styles.container}>
-            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
-          </div>
+          <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
         </div>
         <div className={styles.frame}>
-        <div className={styles.container}>
+        <Sidebar />
+        <div className={styles.content}>
           <Grid fluid>
             <Row>
               <Col xs={12} md={9}>
@@ -62,6 +62,7 @@ class AssetPage extends React.Component {
             <Row>
               <Col xs={12} md={12}>
               <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
+              <h4 className={styles.subhead} data-emergence="hidden">Our logos can only be used as permitted by our Trademark Usage Guidelines.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/"/>
@@ -72,10 +73,20 @@ class AssetPage extends React.Component {
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-3.jpg" />
               </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-4.jpg"/>
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-5.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-6.jpg" />
+              </Col>
             </Row>
             <Row>
               <Col xs={12} md={12}>
                 <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">The office</h2>
+                <h4 className={styles.subhead} data-emergence="hidden">Don’t worry about needing to snap photos of our office. We have done that for you. Feel free to use these.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
@@ -130,7 +141,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Executive team</h2>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Leadership team</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />

@@ -9,9 +9,11 @@
 
 import React, { PropTypes } from 'react';
 import cx from 'classnames';
-import Header from './Header';
+import Navbar from '../Navbar/Navbar';
+import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer';
 import s from './Layout.css';
+import styles from '../../assets/app.css';
 
 class Layout extends React.Component {
 
@@ -30,9 +32,9 @@ class Layout extends React.Component {
   render() {
     return (
       <div ref={node => (this.root = node)}>
-        <div>
-          <Header />
+        <div className={styles.headbg}>
           <main>
+            <Navbar />
             <div>
               <div {...this.props} className={cx(s.content, this.props.className)} />
             </div>

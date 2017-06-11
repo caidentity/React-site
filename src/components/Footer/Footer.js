@@ -16,8 +16,9 @@ function Footer() {
   return (
     <footer className="">
     <div className={s.footerleft}>
-      <ul className="mdl-mini-footer__link-list">
+      <ul>
         <li><Link to="/">Overview</Link></li>
+        <li><Link to="./logo">Brand Guidelines</Link></li>
         <li><Link to="./assets">Brand Assets</Link></li>
         <li><Link to="http://www.evernote.com">Evernote.com</Link></li>
         <li><Link to="http://www.evernote.com/careers" target="_blank">Careers</Link></li>

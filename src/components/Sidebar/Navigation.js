@@ -1,7 +1,6 @@
 /**
  * React Site
  *
- *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
  * This source code is licensed under the MIT license found in the
@@ -9,11 +8,9 @@
  */
 
 import React from 'react';
-import Navigation from './Navigation';
 import Link from '../Link';
-import s from './Header.css';
 
-class Header extends React.Component {
+class Navigation extends React.Component {
 
   componentDidMount() {
     window.componentHandler.upgradeElement(this.root);
@@ -25,18 +22,16 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header className={`sidebar ${s.header}`} ref={node => (this.root = node)}>
-      <div className={`${s.logocontainer}`}>
-      <Link className={`title ${s.logo}`} to="/">  </Link>
-      </div>
-        <div className={`${s.fixednav}`}>
-          <div className={`${s.toggle}`}></div>
-          <Navigation />
-        </div>
-      </header>
+      <nav className="sidebar-nav" ref={node => (this.root = node)}>
+        <h5>Guidelines</h5>
+        <Link className="" to="/">Logo</Link>
+        <Link className="" to="/logo">Color</Link>
+        <Link className="" to="/assets">Typeography</Link>
+        <Link className="" to="/assets">Photography</Link>
+      </nav>
     );
   }
 
 }
 
-export default Header;
+export default Navigation;
