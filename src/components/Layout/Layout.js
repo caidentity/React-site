@@ -10,7 +10,6 @@
 import React, { PropTypes } from 'react';
 import cx from 'classnames';
 import Navbar from '../Navbar/Navbar';
-import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer';
 import s from './Layout.css';
 import styles from '../../assets/app.css';

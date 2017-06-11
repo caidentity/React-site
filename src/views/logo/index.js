@@ -10,10 +10,11 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import Sidebar from '../../components/Sidebar/BrandGuideSidebar';
 import Link from '../../components/Link';
 import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import s from './styles.css';
 import styles from '../../assets/app.css';
@@ -31,6 +32,7 @@ class LogoPage extends React.Component {
         <div className={styles.pagetitle}>
           <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Our Logo</h1>
         </div>
+        <StickyContainer style={{zIndex: 2}}>
         <div className={styles.frame}>
           <Sidebar />
           <div className={styles.content}>
@@ -167,7 +169,7 @@ class LogoPage extends React.Component {
                 </Col>
                 <Col xs={12} md={4}>
                   <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-7.jpg"></img></div>
-                  <p data-emergence="hidden">Dont use any other shade of green for a background except #2DBE60.</p>
+                  <p data-emergence="hidden">Dont use any shade of green for a background</p>
                 </Col>
                 <Col xs={12} md={4}>
                   <div className={styles.img} data-emergence="hidden"><img src="/img/guide/logo/logocrime-8.jpg"></img></div>
@@ -187,6 +189,7 @@ class LogoPage extends React.Component {
             </Grid>
           </div>
         </div>
+        </StickyContainer>
       </Layout>
     );
   }

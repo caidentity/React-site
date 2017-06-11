@@ -10,10 +10,11 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import Sidebar from '../../components/Sidebar/BrandAssetsSidebar';
 import Link from '../../components/Link';
 import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import s from './styles.css';
 import styles from '../../assets/app.css';
@@ -41,6 +42,7 @@ class AssetPage extends React.Component {
         <div className={styles.pagetitle}>
           <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
         </div>
+        <StickyContainer style={{zIndex: 2}}>
         <div className={styles.frame}>
         <Sidebar />
         <div className={styles.content}>
@@ -118,7 +120,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row>
               <Col xs={12} md={12}>
-                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Products</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden" id="product">Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -162,6 +164,7 @@ class AssetPage extends React.Component {
           </Grid>
         </div>
         </div>
+        </StickyContainer>
       </Layout>
     );
   }
