@@ -26,7 +26,6 @@ class Navigation extends React.Component {
         <Link className="" to="/">Overview</Link>
         <Link className="" to="/logo">Guidelines</Link>
         <Link className="" to="/assets">Brand Assets</Link>
-        <Link className="" to="http://www.en-testing.appspot.com/legal" target="_blank">Legal</Link>
       </nav>
     );
   }

@@ -35,7 +35,7 @@ class LogoPage extends React.Component {
         <StickyContainer style={{zIndex: 2}}>
         <div className={styles.frame}>
           <Sidebar />
-          <div className={styles.content}>
+          <section className={styles.content}>
             <Grid fluid>
               <Row>
                 <Col xs={12} md={12}>
@@ -187,8 +187,8 @@ class LogoPage extends React.Component {
               </Col>
               </Row>
             </Grid>
+          </section>
           </div>
-        </div>
         </StickyContainer>
       </Layout>
     );

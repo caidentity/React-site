@@ -21,7 +21,7 @@
 .sidebar nav {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 0px;
   display: block;
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
   border-right: 1px solid #EFEFEF;
@@ -34,6 +34,7 @@
   text-decoration: none;
   line-height: 30px;
   padding: 10px 20px;
+  margin: 0px 0px 20px;
 }
 .sidebar nav a {
   width: 190px;

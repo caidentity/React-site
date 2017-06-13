@@ -32,11 +32,11 @@ class BrandAssetsSidebar extends React.Component {
           // console.log({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight });
 
           return (
-            <div style={{ ...style,overflow: 'inital',}}>
+            <nav style={{ ...style,overflow: 'inital',}}>
               <div className={`sidebar ${s.sidebar}`} ref={node => (this.root = node)}>
                 <Navigation />
               </div>
-            </div>
+            </nav>
           )
         }
       }
