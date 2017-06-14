@@ -27,7 +27,7 @@ function Footer() {
         <li>© 2017 Evernote Inc.</li>
         <li>Version 2.2.2.</li>
         <li>Last Updated on April 3rd 2017, 9:46 pm.</li>
-        <li><Link to="./logo">Whats new</Link></li>
+        <li><Link to="/whatsnew">Whats new</Link></li>
       </ul>
     </div>
     <div className={s.footerright}>

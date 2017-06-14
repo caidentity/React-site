@@ -10,6 +10,10 @@
     "chunk": "main"
   },
   {
+    "path": "/whatsnew",
+    "page": "./views/whatsnew"
+  },
+  {
     "path": "/logo",
     "page": "./views/marketing/logo"
   },
