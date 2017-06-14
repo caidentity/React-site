@@ -27,7 +27,7 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.hometitle}>
           <div className={styles.container}>
-            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Evernote Brand Guide</h1>
+            <h1 className={styles.title+ ' ' + "revealer"}>Evernote Brand Guide</h1>
           </div>
         </div>
         <div className={styles.frame}>
