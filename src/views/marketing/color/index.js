@@ -38,7 +38,8 @@ class ColorPage extends React.Component {
             <section className={styles.content}>
               <Grid fluid>
                 <Row>
-                  <Col xs={12} md={12}>
+                  <Col xs={12} sm={12} md={12}>
+                    <p>Content will go here</p>
                   </Col>
                 </Row>
               </Grid>

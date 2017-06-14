@@ -133,7 +133,6 @@ h4.subhead {
   background: #F6F6F6; }
 
 main {
-  width: 1400px;
   margin: 0 auto; }
 
 .frame {
@@ -151,15 +150,15 @@ main {
 
 @media screen and (min-width: 1500px) {
   main {
-    width: 1500px; }
+    width: 1450px; }
   header {
-    width: 1440px; } }
+    width: 1390px; } }
 
 @media screen and (max-width: 1500px) {
   main {
-    width: 1400px; }
+    width: 1350px; }
   header {
-    width: 1340px; } }
+    width: 1290px; } }
 
 @media screen and (max-width: 1400px) {
   main {
