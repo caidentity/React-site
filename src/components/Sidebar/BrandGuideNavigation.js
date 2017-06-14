@@ -24,10 +24,10 @@ class Navigation extends React.Component {
     return (
       <nav className="sidebar-nav" ref={node => (this.root = node)}>
         <h5>Guidelines</h5>
-        <Link className="" to="/">Logo</Link>
-        <Link className="" to="/logo">Color</Link>
-        <Link className="" to="/assets">Typeography</Link>
-        <Link className="" to="/assets">Photography</Link>
+        <Link className="" to="/logo">Logo</Link>
+        <Link className="" to="/color">Color</Link>
+        <Link className="" to="/type">Typeography</Link>
+        <Link className="" to="/photo">Photography</Link>
       </nav>
     );
   }
