@@ -11,7 +11,7 @@
 footer {
   position: relative;
   background: #fff;
-  padding: 90px 0px 110px;
+  padding: 100px 0px 140px;
   margin-top: 140px;
   z-index: 99;
 }
@@ -36,6 +36,17 @@ footer .footerleft {
   float: left;
   margin: 0px 20px;
 }
+footer .footerbottom {
+  margin-top: 10px;
+}
+footer .footerbottom li {
+  color: #bbb;
+  font-size: 13px;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+}
+footer .footerbottom a {
+  color: #bbb;
+}
 footer .footerright {
   float: right;
   margin: 0px 20px;
@@ -48,6 +59,9 @@ footer img {
 @media screen and (max-width: 1000px) {
   footer .footerleft {
     max-width: 90%;
+  }
+  footer .footerbottom {
+    margin-top: 50px;
   }
   footer ul {
     display: inherit;

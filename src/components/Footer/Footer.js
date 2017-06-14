@@ -23,6 +23,12 @@ function Footer() {
         <li><Link to="http://www.evernote.com">Evernote.com</Link></li>
         <li><Link to="http://www.evernote.com/careers" target="_blank">Careers</Link></li>
       </ul>
+      <ul className={s.footerbottom}>
+        <li>© 2017 Evernote Inc.</li>
+        <li>Version 2.2.2.</li>
+        <li>Last Updated on April 3rd 2017, 9:46 pm.</li>
+        <li><Link to="./logo">Whats new</Link></li>
+      </ul>
     </div>
     <div className={s.footerright}>
       <ul>
@@ -31,7 +37,7 @@ function Footer() {
         <li><Link to=""><img className={s.footericon} src={'/img/follow/medium.png'}></img></Link></li>
         <li><Link to=""><img className={s.footericon} src={'/img/follow/instagram.png'}></img></Link></li>
       </ul>
-      </div>
+    </div>
     </footer>
   );
 }
