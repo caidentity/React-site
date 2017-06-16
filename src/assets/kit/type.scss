@@ -33,11 +33,41 @@ a {
 
 /*--- CUSTOM STYLING ----*/
 .sectionheader {
-  margin: 140px 0px 30px;
+  margin: 120px 0px 30px;
 }
 h4.subhead {
   font-size: 15px;
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
   color: #848484;
   margin: 0px 0px 40px;
+}
+
+@media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1500px) {
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1000px) {
 }

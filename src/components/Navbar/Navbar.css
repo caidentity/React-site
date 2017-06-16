@@ -14,7 +14,7 @@ header {
   right: 0;
   left: 0;
   margin: 0 auto;
-  height: 50px;
+  height: 54px;
   z-index: 999;
   color: #000;
   background: #fff;
@@ -24,8 +24,8 @@ header .logocontainer {
   float: left;
   position: relative;
   background: #2DBE60;
-  width: 50px;
-  height: 50px;
+  width: 54px;
+  height: 54px;
   margin: 0px 20px 0px 0px;
 }
 header .logo {
@@ -36,7 +36,7 @@ header .logo {
   background-size: 36px 36px;
   background-image: url('/img/nav/logo-nav-white.png');
   margin: 0px auto;
-  top: 7px;
+  top: 8px;
 }
 header .toggle {
   display: none;

@@ -17,11 +17,10 @@ function Footer() {
     <footer className="">
     <div className={s.footerleft}>
       <ul>
-        <li><Link to="/">Overview</Link></li>
-        <li><Link to="./logo">Brand Guidelines</Link></li>
         <li><Link to="./assets">Brand Assets</Link></li>
+        <li><Link to="./logo">Brand Guidelines</Link></li>
+        <li><span className={s.seperator}></span></li>
         <li><Link to="http://www.evernote.com">Evernote.com</Link></li>
-        <li><Link to="http://www.evernote.com/careers" target="_blank">Careers</Link></li>
       </ul>
       <ul className={s.footerbottom}>
         <li>© 2017 Evernote Inc.</li>

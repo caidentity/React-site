@@ -114,13 +114,28 @@ a {
 
 /*--- CUSTOM STYLING ----*/
 .sectionheader {
-  margin: 140px 0px 30px; }
+  margin: 120px 0px 30px; }
 
 h4.subhead {
   font-size: 15px;
   font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
   color: #848484;
   margin: 0px 0px 40px; }
+
+@media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 42px; }
+  h2 {
+    font-size: 32px; }
+  h3 {
+    font-size: 24px; }
+  h4 {
+    font-size: 16px; }
+  h5 {
+    font-size: 14px; }
+  p {
+    font-size: 15px;
+    line-height: 30px; } }
 
 .img img {
   width: 100%;
@@ -210,7 +225,7 @@ main {
     float: left;
     margin: 0;
     padding: 300px 26px 0px;
-    font-size: 74px;
+    font-size: 78px;
     font-family: "gotham-bold", helevetica neue, helvetica, sans-serif; }
 
 /*--- HOME TITLES --*/

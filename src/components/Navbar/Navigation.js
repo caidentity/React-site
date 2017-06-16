@@ -23,9 +23,8 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav className="sidebar-nav" ref={node => (this.root = node)}>
-        <Link className="" to="/">Overview</Link>
-        <Link className="" to="/logo">Guidelines</Link>
         <Link className="" to="/assets">Brand Assets</Link>
+        <Link className="" to="/logo">Guidelines</Link>
       </nav>
     );
   }

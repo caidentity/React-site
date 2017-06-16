@@ -26,13 +26,13 @@ class BrandAssetsSidebar extends React.Component {
 
   render() {
     return (
-      <Sticky topOffset={80}>
+      <Sticky topOffset={0}>
       {
         ({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight }) => {
           // console.log({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight });
 
           return (
-            <nav style={{ ...style,overflow: 'inital',}}>
+            <nav style={{ ...style,top: '90',overflow: 'inital',}}>
               <div className={`sidebar ${s.sidebar}`} ref={node => (this.root = node)}>
                 <Navigation />
               </div>
