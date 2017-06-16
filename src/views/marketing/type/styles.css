@@ -7,36 +7,3 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
-@media screen and (max-width: 1024px) {
-  .content {
-    padding: 0 16px;
-  }
-}
-.lockup {
-  background: #fff;
-  width: 100%;
-  margin: 5px 0px;
-  border: 1px solid #E6E6E6;
-}
-.lockup img {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  padding: 14px 0px;
-  max-height: 215px;
-}
-.lockup.darkbg {
-  background: #596062;
-}
-.spacing {
-  width: 100%;
-  margin: 5px 0px;
-}
-.spacing img {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  max-height: 228px;
-}

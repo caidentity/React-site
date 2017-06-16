@@ -1,92 +1,14 @@
 @import "./kit/color.scss";
-@import "./kit/brandasset.scss";
+@import "./kit/animation.scss";
 @import "./kit/type.scss";
+@import "./kit/layout.scss";
+
+@import "./components/brandasset.scss";
 
 .img img {
   width: 100%;
   max-width: 100%;
   margin: 5px 0px;
-}
-
-/*--- GLOBAL --*/
-.headbg {
-  height: 740px;
-  background: $headbg;
-}
-main {
-  margin: 0 auto;
-}
-.frame {
-  position: relative;
-  background: #fff;
-  margin: 0px 30px;
-  padding: 80px 0px;
-}
-
-.frame .content {
-  position: relative;
-  left: 120px;
-  margin: 0 auto;
-  max-width: 900px;
-  width: 900px;
-}
-@media screen and (min-width: 1500px) {
-  main {
-    width: 1450px;
-  }
-  header {
-    width: 1390px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  main {
-    width: 1350px;
-  }
-  header {
-    width: 1290px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  main {
-    width: 1200px;
-  }
-  header {
-    width: 1140px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  main {
-    width: 1000px;
-  }
-  header {
-    width: 940px;
-  }
-  .frame .content {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  body {
-    background: #fff;
-  }
-  main {
-   margin-left: 0px;
-   width: 96%;
-  }
-  .frame {
-    position: relative;
-    background: #fff;
-    margin: 0px;
-    padding: 80px 0px;
-    width: 96%;
-    left: 0;
-  }
-  .frame .content {
-    margin: 0 auto;
-    max-width: 96%;
-    width: 96%;
-    left: 0;
-  }
 }
 
 
@@ -128,34 +50,4 @@ main {
     max-width: 400px;
     font-family: "gotham-bold", helevetica neue, helvetica, sans-serif;
   }
-}
-/*----ANIMATE ---*/
-.animate {
-  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  transform: translateY(0px);
-  -webkit-transform: translateY(0px);
-}
-[data-emergence=hidden] {
-  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  transform: translateY(100px);
-  -webkit-transform: translateY(100px);
-}
-[data-emergence=visible] {
-  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
-  transform: translateY(0px);
-  -webkit-transform: translateY(0px);
-  opacity: 1;
-  visibility: visible;
-}
-
-.revealed {
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  visibility: visible;
-}
-.revealer {
-  transform: translateY(100px);
-  -webkit-transform: translateY(100px);
-  visibility: visible;
 }

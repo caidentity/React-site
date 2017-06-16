@@ -49,11 +49,11 @@ header nav {
 header nav a {
   display: inline-block;
   float: left;
-  color: #aaa;
+  color: #787878;
   text-decoration: none;
   line-height: 30px;
-  padding: 10px 26px;
-  font-size: 13px;
+  padding: 10px 28px;
+  font-size: 14px;
 
 }
 header nav a:hover {

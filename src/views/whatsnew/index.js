@@ -31,21 +31,17 @@ class WhatsNewPage extends React.Component {
         <div className={styles.pagetitle}>
           <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Whats New</h1>
         </div>
-        <StickyContainer style={{zIndex: 2}}>
-          <div className={styles.frame}>
-            <section className={styles.content}>
-              <Grid fluid>
-                <Row>
-                  <Col xs={12} sm={12} md={12}>
-                    <h2>Version Title</h2>
-                    <p>date</p>
-                    <p>Content Title</p>
-                  </Col>
-                </Row>
-              </Grid>
-            </section>
-          </div>
-        </StickyContainer>
+        <div className={styles.frame}>
+          <Grid fluid>
+            <Row>
+              <Col xs={12} sm={12} md={12}>
+                <h2>Version Title</h2>
+                <p>date</p>
+                <p>Content Title</p>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
       </Layout>
     );
   }
