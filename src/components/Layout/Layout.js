@@ -8,9 +8,13 @@
  */
 
 import React, { PropTypes } from 'react';
+import ReactDOM from 'react-dom';
+import PrismicApp from '../../PrismicApp';
+
 import cx from 'classnames';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer';
+
 import s from './Layout.css';
 import styles from '../../assets/app.css';
 
@@ -30,6 +34,7 @@ class Layout extends React.Component {
 
   render() {
     return (
+      <PrismicApp />,
       <div className={styles.headbg} ref={node => (this.root = node)}>
         <Navbar />
         <main>
