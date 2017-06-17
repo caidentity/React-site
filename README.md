@@ -105,5 +105,8 @@ $ yarn install
 ## Added Features
 React Site - (https://github.com/kriasoft/react-static-boilerplate)
 React Flexbox Grid - (https://github.com/roylee0704/react-flexbox-grid)
-Node Sass Chokidars
+Node Sass
 Emergence.js - For animations -(https://github.com/xtianmiller/emergence.js)
+react-dom - https://www.npmjs.com/package/react-dom
+react-sticky - https://github.com/captivationsoftware/react-sticky
+react-scrollchor - https://github.com/bySabi/react-scrollchor

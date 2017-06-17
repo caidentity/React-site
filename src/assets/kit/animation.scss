@@ -1,0 +1,30 @@
+/*----ANIMATE ---*/
+.animate {
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+[data-emergence=hidden] {
+  transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+[data-emergence=visible] {
+  -webkit-transition: opacity 1s,transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.revealed {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  visibility: visible;
+}
+.revealer {
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  visibility: visible;
+}

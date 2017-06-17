@@ -9,9 +9,12 @@
  */
 
 import React from 'react';
-import Layout from '../../../components/Layout';
-import Link from '../../../components/Link';
+import Layout from '../../components/Layout';
+import Sidebar from '../../components/Sidebar/BrandAssetsSidebar';
+import Link from '../../components/Link';
+import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import s from './styles.css';
 import styles from '../../assets/app.css';
@@ -37,30 +40,34 @@ class AssetPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <div className={styles.container}>
-            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Brand Assets</h1>
-          </div>
+          <h1 className={styles.title+ ' ' + "revealer"}>Brand Assets</h1>
         </div>
-        <div className={styles.container}>
+        <StickyContainer style={{zIndex: 2}}>
+        <div className={styles.frame}>
+        <Sidebar />
+        <div className={styles.content}>
           <Grid fluid>
             <Row>
               <Col xs={12} md={9}>
                 <p>Thanks for your interest in Evernote. We have a few guidelines
                 for using our brand resources, please take a moment to familiarize
-                yourself with them. You can download individual assets in each
+                yourself with <Link to="/logo">them</Link>. You can download individual assets in each
                 section. If you want everything, use this button to download
-                a .zip file</p>
+                all</p>
               </Col>
-              <Col xs={12} md={3}>
-                <p>button</p>
+              <Col xs={12} md={1}>
+              </Col>
+              <Col xs={12} md={2}>
+                <Link to="/"><ReactButton color='border' size='normal'>Download all</ReactButton></Link>
               </Col>
             </Row>
-            <Row>
+            <Row id="logo">
               <Col xs={12} md={12}>
-              <h2 className={styles.revealer} data-emergence="hidden">Our logo</h2>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
+              <h4 className={styles.subhead} data-emergence="hidden">Our logos can only be used as permitted by our Trademark Usage Guidelines.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/" />
+                <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/"/>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-2.jpg" />
@@ -68,10 +75,20 @@ class AssetPage extends React.Component {
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-3.jpg" />
               </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-4.jpg"/>
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-5.jpg" />
+              </Col>
+              <Col xs={12} sm={6} md={4}>
+                <Brandasset name="Logo" thumburl="/img/assets/logo-6.jpg" />
+              </Col>
             </Row>
-            <Row>
+            <Row id="office">
               <Col xs={12} md={12}>
-                <h2 className={styles.revealer} data-emergence="hidden">The office</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">The office</h2>
+                <h4 className={styles.subhead} data-emergence="hidden">Don’t worry about needing to snap photos of our office. We have done that for you. Feel free to use these.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
@@ -101,9 +118,9 @@ class AssetPage extends React.Component {
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-9.jpg" />
               </Col>
             </Row>
-            <Row>
+            <Row id="product">
               <Col xs={12} md={12}>
-                <h2 className={styles.revealer} data-emergence="hidden">Products</h2>
+                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -124,15 +141,12 @@ class AssetPage extends React.Component {
                 <Brandasset name="Desktop" thumburl="/img/assets/product-6.jpg" />
               </Col>
             </Row>
-            <Row>
+            <Row id="leadership">
               <Col xs={12} md={12}>
-              <h2 className={styles.revealer} data-emergence="hidden">Executive team</h2>
+              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Leadership team</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />
-              </Col>
-              <Col xs={12} sm={6} md={4}>
-                <Brandasset name="Phil Libin" thumburl="/img/assets/team-2.jpg" />
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Michelle Wagner" thumburl="/img/assets/team-3.jpg" />
@@ -149,6 +163,8 @@ class AssetPage extends React.Component {
             </Row>
           </Grid>
         </div>
+        </div>
+        </StickyContainer>
       </Layout>
     );
   }

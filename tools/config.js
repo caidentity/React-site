@@ -1,6 +1,6 @@
 /**
  * React Site
- * 
+ *
  *
  * Copyright © 2017-present Craig Aucutt. All rights reserved.
  *
@@ -9,8 +9,8 @@
  */
 
 module.exports = {
-  title: 'React Site',        // Your website title
-  url: 'https://rsb.kriasoft.com',          // Your website URL
-  project: 'brandguide-c68d5',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  title: 'Evernote Design Guidelines',               // Your website title
+  url: 'https://brand.evernote.com',                 // Your website URL
+  project: 'brandguide-c68d5',                       // Firebase project. See README.md -> How to Deploy
+  trackingID: 'UA-XXXXX-Y',                          // Google Analytics Site's ID
 };

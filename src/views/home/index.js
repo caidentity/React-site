@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import Layout from '../../../components/Layout';
+import Layout from '../../components/Layout';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import s from './styles.css';
@@ -27,9 +27,10 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <div className={styles.hometitle}>
           <div className={styles.container}>
-            <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Evernote Brand Guide</h1>
+            <h1 className={styles.title}>Evernote Brand Guide</h1>
           </div>
         </div>
+        <div className={styles.frame}>
         <div className={styles.container}>
           <Grid fluid>
             <Row>
@@ -55,6 +56,7 @@ class HomePage extends React.Component {
               </Col>
             </Row>
           </Grid>
+        </div>
         </div>
       </Layout>
     );
