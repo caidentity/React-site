@@ -31,30 +31,30 @@ main {
   header {
     width: 1290px; } }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1250px) {
   main {
     width: 1200px; }
   header {
     width: 1140px; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1000px) {
   main {
-    width: 1000px; }
+    width: 90%; }
   header {
-    width: 940px; }
+    width: 85.5%; }
   .frame .content {
-    width: 600px; } }
+    width: 70%; } }
 
 @media screen and (max-width: 1000px) {
   body {
     background: #fff; }
   main {
-    margin-left: 0px;
+    margin: 0 auto;
     width: 96%; }
   .frame {
     position: relative;
     background: #fff;
-    margin: 0px;
+    margin: 0px auto;
     padding: 80px 0px;
     width: 96%;
     left: 0; }

@@ -30,16 +30,14 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div ref={node => (this.root = node)}>
-        <div className={styles.headbg}>
-          <Navbar />
-          <main>
-            <div>
-              <div {...this.props} className={cx(s.content, this.props.className)} />
-            </div>
-          </main>
+      <div className={styles.headbg} ref={node => (this.root = node)}>
+        <Navbar />
+        <main>
+          <div>
+            <div {...this.props} className={cx(s.content, this.props.className)} />
+          </div>
           <Footer />
-        </div>
+        </main>
       </div>
     );
   }

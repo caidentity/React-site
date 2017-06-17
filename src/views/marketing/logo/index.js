@@ -118,7 +118,6 @@ class LogoPage extends React.Component {
                     <p >Use with centered layouts and when
                     there is ample vertical space. Examples being Invitations, gift cards, covers</p>
                   </Col>
-
                 </Row>
                 <Row>
                   <Col xs={12} md={12}>
@@ -126,13 +125,13 @@ class LogoPage extends React.Component {
                     <h4 className={styles.subhead} > Always maintain this minimum clearspace
                     between the logo and other elements to avoid overcrowding.</h4>
                   </Col>
-                  <Col xs={12} md={6}>
-                    <div className={s.spacing}  >
+                  <Col xs={12} s={12} md={6}>
+                    <div className={s.spacing}>
                       <img src="/img/guide/logo/logospacing-1.jpg"></img>
                     </div>
                   </Col>
-                  <Col xs={12} md={6}>
-                    <div className={s.spacing}  >
+                  <Col xs={12} s={12} md={6}>
+                    <div className={s.spacing}>
                       <img src="/img/guide/logo/logospacing-2.jpg"></img>
                     </div>
                   </Col>

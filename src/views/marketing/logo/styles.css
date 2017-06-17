@@ -25,6 +25,7 @@
   margin: 0 auto;
   padding: 14px 0px;
   max-height: 215px;
+  max-width: 100%;
 }
 .lockup.darkbg {
   background: #596062;
@@ -39,4 +40,5 @@
   margin: 0;
   padding: 0;
   max-height: 228px;
+  max-width: 100%;
 }
