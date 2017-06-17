@@ -33,7 +33,7 @@ class WhatsNewPage extends React.Component {
   fetchPage(props) {
     if (props.prismicCtx) {
             // We are using the function to get a document by its uid
-      return props.prismicCtx.api.getByUID('guides', props.match.params.page, {}, (err, doc) => {
+      return props.prismicCtx.api.getByUID('guides', props.match.params.uid, {}, (err, doc) => {
         if (doc) {
                     // We put the retrieved content in the state as a doc variable
           this.setState({ doc });
