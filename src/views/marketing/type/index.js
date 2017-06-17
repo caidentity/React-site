@@ -30,7 +30,7 @@ class TypePage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title+ ' ' + "revealer"}>Typeography</h1>
+          <h1 className={styles.title}>Typeography</h1>
         </div>
         <StickyContainer style={{zIndex: 2}}>
           <div className={styles.frame}>

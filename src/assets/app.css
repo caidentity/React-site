@@ -60,7 +60,7 @@ a {
 
 /*--- CUSTOM STYLING ----*/
 .sectionheader {
-  margin: 120px 0px 30px; }
+  margin: 100px 0px 30px; }
 
 h4.subhead {
   font-size: 15px;
@@ -157,8 +157,7 @@ main {
   transition: opacity 0.5s,transform 0.5s ease;
   -webkit-transition: opacity 0.5s,transform 0.5s ease;
   transform: translateY(24px);
-  -webkit-transform: translateY(24px);
-  opacity: 0; }
+  -webkit-transform: translateY(24px); }
   .brandasset img {
     position: relative;
     width: 100%;
@@ -239,8 +238,8 @@ main {
 
 /*--- PAGE TITLES --*/
 .pagetitle {
-  height: 430px;
-  max-height: 430px;
+  height: 460px;
+  max-height: 460px;
   margin-bottom: 40px; }
   .pagetitle .icon {
     display: inline-block;

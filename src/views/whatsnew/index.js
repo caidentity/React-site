@@ -29,7 +29,7 @@ class WhatsNewPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title+ ' ' + "revealer"} data-emergence="hidden">Whats New</h1>
+          <h1 className={styles.title} >Whats New</h1>
         </div>
         <div className={styles.frame}>
           <Grid fluid>

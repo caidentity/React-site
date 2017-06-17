@@ -61,7 +61,7 @@ class ColorPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title+ ' ' + "revealer"}>Color</h1>
+          <h1 className={styles.title}>Color</h1>
         </div>
         <StickyContainer style={{zIndex: 2}}>
           <div className={styles.frame}>
@@ -75,7 +75,7 @@ class ColorPage extends React.Component {
                 </Row>
                 <Row>
                   <Col xs={12} md={12}>
-                    <h2 className={styles.sectionheader+ ' ' + "revealer"}>Primary Pallete</h2>
+                    <h2 className={styles.sectionheader}>Primary Pallete</h2>
                   </Col>
                   <Col xs={12} md={12}>
                     <p>Our primary palette uses bright colors to bring a boldness to our brand, and is used in logical ways throughout product and marketing to guide the eye and highlight the important bits. We pepper warmer, secondary palette colors throughout to soften the experience and to impart confidence and optimism.</p>
@@ -92,7 +92,7 @@ class ColorPage extends React.Component {
                 </Row>
                 <Row>
                   <Col xs={12} md={12}>
-                    <h2 className={styles.sectionheader+ ' ' + "revealer"}>Secondary Pallete</h2>
+                    <h2 className={styles.sectionheader}>Secondary Pallete</h2>
                   </Col>
                   <Col xs={12} md={12}>
                     <p>Our secondary palette contains a variety of colors to keep things fresh and interesting. We lean
@@ -117,7 +117,7 @@ class ColorPage extends React.Component {
                 </Row>
                 <Row>
                   <Col xs={12} md={12}>
-                    <h2 className={styles.sectionheader+ ' ' + "revealer"}>Download color palettes</h2>
+                    <h2 className={styles.sectionheader}>Download color palettes</h2>
                   </Col>
                   <Col xs={12} sm={12} md={12}>
                     <p>Both RGB and CMYK palettes are available for Adobe products (.ase). Also included is a RGB palette for Sketch. Simply install the Sketch Palette plugin to use it.</p>

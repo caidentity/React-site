@@ -30,7 +30,7 @@ class PhotoPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title+ ' ' + "revealer"}>Photography</h1>
+          <h1 className={styles.title}>Photography</h1>
         </div>
         <StickyContainer style={{zIndex: 2}}>
           <div className={styles.frame}>

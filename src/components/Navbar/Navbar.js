@@ -27,7 +27,7 @@ class Header extends React.Component {
     return (
       <header className={`navbar ${s.header}`}  ref={node => (this.root = node)}>
           <div className={`${s.logocontainer}`}>
-            <Link className={`title ${s.logo}`} to="/">  </Link>
+            <Link className={`title ${s.logo}`} to="/"></Link>
           </div>
           <div className={`${s.toggle}`}></div>
           <Navigation />
