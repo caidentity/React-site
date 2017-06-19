@@ -64,13 +64,19 @@ class WhatsNewPage extends React.Component {
     if(this.state.notFound) return null; //component NotFound doesn't exist yet <NotFound />;
     if(!this.state.doc) return <h1>Loading</h1>;
     return (
-      <div data-wio-id={this.state.doc.id}>
-        {/* This is how to get an image into your template */}
-        {/* This is how to get text into your template */}
-        <h1>{this.state.doc.getText('guides.title')}</h1>
-        <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('guides.body').asHtml() }} />
-        {/* This is how to get structured text into your template */}
-      </div>
+      <Layout className={s.content}>
+        <div className={styles.pagetitle}>
+          <h1 className={styles.title}>{this.state.doc.getText('guides.title')}</h1>
+        </div>
+        <div className={styles.frame}>
+          <div data-wio-id={this.state.doc.id}>
+            {/* This is how to get an image into your template */}
+            {/* This is how to get text into your template */}
+            <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('guides.body').asHtml() }} />
+            {/* This is how to get structured text into your template */}
+          </div>
+        </div>
+      </Layout>
     );
   }
 
