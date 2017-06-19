@@ -38,6 +38,6 @@ export default class PrismicApp extends React.Component {
   }
 
   render() {
-    return <Layout prismicCtx={this.state.prismicCtx} />;
+    return !this.state.prismicCtx ? '' : <Layout prismicCtx={this.state.prismicCtx} />;
   }
 }

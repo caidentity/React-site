@@ -33,10 +33,6 @@ class WhatsNewPage extends React.Component {
     document.title = "Whats New";
   }
 
-  componentWillMount() {
-  	this.fetchPage();
-  }
-
   componentWillReceiveProps(props) {
     this.fetchPage(props);
   }
@@ -59,6 +55,7 @@ class WhatsNewPage extends React.Component {
 
 
   render() {
+    console.log(this.props);
     if(this.state.notFound) return <NotFound />;
     if(!this.state.doc) return <h1>Loading</h1>;
     return (
