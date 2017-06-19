@@ -9,7 +9,6 @@
 
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
-import PrismicApp from '../../PrismicApp';
 
 import cx from 'classnames';
 import Navbar from '../Navbar/Navbar';
