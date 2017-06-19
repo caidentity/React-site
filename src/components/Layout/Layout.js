@@ -10,6 +10,11 @@
 import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
+import PrismicApp from '../../PrismicApp';
+import Prismic from 'prismic.io';
+import PrismicConfig from '../../prismic-configuration';
+
+
 import cx from 'classnames';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer';

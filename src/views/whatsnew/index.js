@@ -31,41 +31,51 @@ class WhatsNewPage extends React.Component {
     notFound: false,
   };
 
+
   componentDidMount() {
     document.title = "Whats New";
   }
 
-  fetchPage(props) {
-      if (props.prismicCtx) {
-              // We are using the function to get a document by its uid
-        return props.prismicCtx.api.getSingle('guides', {}, (err, doc) => {
-          if (doc) {
-                      // We put the retrieved content in the state as a doc variable
-            this.setState({ doc });
-          } else {
-                      // We changed the state to display error not found if no matched doc
-            this.setState({ notFound: !doc });
-          }
-        });
-      }
-      return null;
-    }
+  componentWillMount() {
+  	this.fetchPage();
+  }
 
-    render() {
-      if (this.state.doc) {
-        return (
-          <div data-wio-id={this.state.doc.id}>
-            {/* This is how to get an image into your template */}
-            {/* This is how to get text into your template */}
-            <h1>{this.state.doc.getText('guides.page_tite')}</h1>
-            {/* This is how to get structured text into your template */}
-          </div>
-        );
-      } else if (this.state.notFound) {
-        return <NotFound />;
-      }
-      return <h1>Loading</h1>;
+  componentWillReceiveProps(props) {
+    this.fetchPage(props);
+  }
+
+  fetchPage() {
+    if (this.props.prismicCtx) {
+      // We are using the function to get a document by its uid
+      return this.props.prismicCtx.api.getSingle('guides', {}, (err, doc) => {
+        if (doc) {
+                      // We put the retrieved content in the state as a doc variable
+          this.setState({ doc });
+        } else {
+          // We changed the state to display error not found if no matched doc
+          this.setState({ notFound: !doc });
+        }
+      });
     }
+    return null;
+  }
+
+  render() {
+    if (this.state.doc) {
+    if(!this.state.doc.id) return <h1>Loading</h1>;
+
+  return (
+        <div data-wio-id={this.state.doc.id}>
+          {/* This is how to get an image into your template */}
+          {/* This is how to get text into your template */}
+          <h1>{this.state.doc.getText('guides.page_tite')}</h1>
+          {/* This is how to get structured text into your template */}
+        </div>
+      );
+    } else if (this.state.notFound) {
+      return <NotFound />;
+    }
+  }
 }
 
 export default WhatsNewPage;
