@@ -31,20 +31,20 @@ class WhatsNewPage extends React.Component {
   }
 
   fetchPage(props) {
-    if (props.prismicCtx) {
-            // We are using the function to get a document by its uid
-      return props.prismicCtx.api.getByUID('guides', props.match.params.uid, {}, (err, doc) => {
-        if (doc) {
-                    // We put the retrieved content in the state as a doc variable
-          this.setState({ doc });
-        } else {
-                    // We changed the state to display error not found if no matched doc
-          this.setState({ notFound: !doc });
-        }
-      });
+      if (props.prismicCtx) {
+              // We are using the function to get a document by its uid
+        return props.prismicCtx.api.getSingle('guidelines', {}, (err, doc) => {
+          if (doc) {
+                      // We put the retrieved content in the state as a doc variable
+            this.setState({ doc });
+          } else {
+                      // We changed the state to display error not found if no matched doc
+            this.setState({ notFound: !doc });
+          }
+        });
+      }
+      return null;
     }
-    return null;
-  }
 
   render() {
     const { doc } = this.state;
@@ -58,7 +58,7 @@ class WhatsNewPage extends React.Component {
           <Row>
             <Col xs={12} sm={12} md={12}>
               <div data-wio-id={doc.id}>
-                <h1>{this.state.doc.getText('guides.title')}</h1>
+                <h1>{this.state.doc.getText('guidelines.title')}</h1>
               </div>
               <p>date</p>
               <p>Content Title</p>
