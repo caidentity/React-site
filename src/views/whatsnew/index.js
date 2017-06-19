@@ -15,6 +15,11 @@ import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { StickyContainer, Sticky } from 'react-sticky';
 
+import PrismicApp from '../../PrismicApp';
+import Prismic from 'prismic.io';
+import PrismicConfig from '../../prismic-configuration';
+
+
 import s from './styles.css';
 import styles from '../../assets/app.css';
 import classnames from 'classnames';
@@ -57,7 +62,7 @@ class WhatsNewPage extends React.Component {
         <Grid fluid>
           <Row>
             <Col xs={12} sm={12} md={12}>
-              <div data-wio-id={doc.id}>
+              <div data-wio-id={this.state.doc.id}>
                 <h1>{this.state.doc.getText('guidelines.title')}</h1>
               </div>
               <p>date</p>
