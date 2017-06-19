@@ -38,7 +38,13 @@ export default class PrismicApp extends React.Component {
   }
 
   render() {
-    <PrismicApp />,
-    return !this.state.prismicCtx ? '' : <Layout prismicCtx={this.state.prismicCtx} />;
+      if(!this.state.prismicCtx) return '';
+
+     const childrenWithProps = React.Children.map(this.props.children,
+       (child) => React.cloneElement(child, {
+         prismicCtx: this.state.prismicCtx
+       })
+      );
+      return <div>{childrenWithProps}</div>;
   }
 }
