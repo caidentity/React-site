@@ -15,7 +15,6 @@ import ReactButton from '../../components/Button';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-import PrismicApp from '../../PrismicApp';
 
 import s from './styles.css';
 import styles from '../../assets/app.css';

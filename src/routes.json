@@ -11,7 +11,7 @@
   },
   {
     "path": "/whatsnew",
-    "page": "./views/whatsnew"
+    "page": "./views/whatsnew/index.js"
   },
   {
     "path": "/logo",
