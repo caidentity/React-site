@@ -39,6 +39,11 @@
     "chunk": "main"
   },
   {
+    "path": "/preview",
+    "page": "./views/preview/index.js",
+    "chunk": "main"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "page": "./views/home"
   }
