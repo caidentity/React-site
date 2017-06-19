@@ -68,6 +68,7 @@ class WhatsNewPage extends React.Component {
         {/* This is how to get an image into your template */}
         {/* This is how to get text into your template */}
         <h1>{this.state.doc.getText('guides.title')}</h1>
+        <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('guides.body').asHtml() }} />
         {/* This is how to get structured text into your template */}
       </div>
     );

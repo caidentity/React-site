@@ -15,23 +15,28 @@
   },
   {
     "path": "/logo",
-    "page": "./views/marketing/logo"
+    "page": "./views/marketing/logo",
+    "chunk": "main"
   },
   {
     "path": "/color",
-    "page": "./views/marketing/color"
+    "page": "./views/marketing/color",
+    "chunk": "main"
   },
   {
     "path": "/type",
-    "page": "./views/marketing/type"
+    "page": "./views/marketing/type",
+    "chunk": "main"
   },
   {
     "path": "/photo",
-    "page": "./views/marketing/photo"
+    "page": "./views/marketing/photo",
+    "chunk": "main"
   },
   {
     "path": "/assets",
-    "page": "./views/brandassets"
+    "page": "./views/brandassets",
+    "chunk": "main"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

@@ -5398,6 +5398,13 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+prismic-toolbar@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/prismic-toolbar/-/prismic-toolbar-0.0.2.tgz#cbb837efc3d57558c675f7dd7a1e6cb3f1ea430a"
+  dependencies:
+    babel-runtime "^6.23.0"
+    whatwg-fetch "~2.0.3"
+
 prismic.io@^3.5.7:
   version "3.5.7"
   resolved "https://registry.yarnpkg.com/prismic.io/-/prismic.io-3.5.7.tgz#bc0538bfc2c165a262e6963047c9f95bf8384dff"
@@ -7078,7 +7085,7 @@ weinre@^2.0.0-pre-I0Z7U9OV:
     nopt "3.0.x"
     underscore "1.7.x"
 
-whatwg-fetch@>=0.10.0, whatwg-fetch@^2.0.3:
+whatwg-fetch@>=0.10.0, whatwg-fetch@^2.0.3, whatwg-fetch@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
 
