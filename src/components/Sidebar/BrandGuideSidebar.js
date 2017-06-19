@@ -32,7 +32,7 @@ class BrandGuideSidebar extends React.Component {
           // console.log({ isSticky, wasSticky, style, distanceFromTop, distanceFromBottom, calculatedHeight });
 
           return (
-            <nav style={{ ...style,top: '90',overflow: 'inital',}}>
+            <nav style={{ ...style,top: '0',overflow: 'inital',}}>
               <div className={`sidebar ${s.sidebar}`} ref={node => (this.root = node)}>
                 <Navigation />
               </div>
