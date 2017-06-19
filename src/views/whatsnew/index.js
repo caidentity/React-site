@@ -32,6 +32,14 @@ class WhatsNewPage extends React.Component {
     document.title = "Whats New";
   }
 
+  componentDidUpdate() {
+    this.props.prismicCtx.toolbar();
+  }
+
+  componentWillMount() {
+    this.fetchPage(this.props);
+  }
+
   componentWillReceiveProps(props) {
     this.fetchPage(props);
   }
@@ -39,29 +47,27 @@ class WhatsNewPage extends React.Component {
   fetchPage(props) {
       if (props.prismicCtx) {
         // We are using the function to get a document by its uid
-        return props.prismicCtx.api.getSingle('guides', {}, (err, doc) => {
-          if (doc) {
-                        // We put the retrieved content in the state as a doc variable
-            this.setState({ doc });
-          } else {
-            // We changed the state to display error not found if no matched doc
-            this.setState({ notFound: !doc });
-          }
+        return props.prismicCtx.api.getSingle('guides')
+        .then((doc) => {
+          if(doc) this.setState({doc});
+          else this.setState({notFound: true});
+        })
+        .catch((e) => {
+          this.setState({notFound: true});
         });
       }
-      return null;
+      return;
     }
 
 
   render() {
-    console.log(this.props);
-    if(this.state.notFound) return <NotFound />;
+    if(this.state.notFound) return null; //component NotFound doesn't exist yet <NotFound />;
     if(!this.state.doc) return <h1>Loading</h1>;
     return (
       <div data-wio-id={this.state.doc.id}>
         {/* This is how to get an image into your template */}
         {/* This is how to get text into your template */}
-        <h1>{this.state.doc.getText('guides.page_tite')}</h1>
+        <h1>{this.state.doc.getText('guides.title')}</h1>
         {/* This is how to get structured text into your template */}
       </div>
     );
