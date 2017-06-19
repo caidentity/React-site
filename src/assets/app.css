@@ -1,3 +1,6 @@
+/*--TEMPLATE---*/
+/*--PALLETE---*/
+/*--FONTS---*/
 /*----ANIMATE ---*/
 .animate {
   -webkit-transition: opacity 1s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -27,6 +30,9 @@
   -webkit-transform: translateY(100px);
   visibility: visible; }
 
+/*--TEMPLATE---*/
+/*--PALLETE---*/
+/*--FONTS---*/
 /*--- TYPE ----*/
 h1 {
   font-size: 42px;
@@ -42,7 +48,7 @@ h3 {
 
 h4 {
   font-size: 16px;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif; }
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif; }
 
 h5 {
   font-size: 14px;
@@ -92,6 +98,9 @@ h4.subhead {
     font-size: 15px;
     line-height: 30px; } }
 
+/*--TEMPLATE---*/
+/*--PALLETE---*/
+/*--FONTS---*/
 /*--- GLOBAL --*/
 .headbg {
   height: 740px;
@@ -158,6 +167,9 @@ main {
     width: 96%;
     left: 0; } }
 
+/*--TEMPLATE---*/
+/*--PALLETE---*/
+/*--FONTS---*/
 /*--- Brand asset --*/
 .brandasset {
   position: relative;
@@ -240,6 +252,9 @@ main {
     .brandasset:hover img {
       opacity: 0.3; }
 
+/*--TEMPLATE---*/
+/*--PALLETE---*/
+/*--FONTS---*/
 .colorcard {
   margin: 15px 0px 15px;
   font-size: 13px; }

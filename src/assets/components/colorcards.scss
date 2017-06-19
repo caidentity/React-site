@@ -1,3 +1,4 @@
+@import "../variables.scss";
 
 .colorcard {
   margin: 15px 0px 15px;
@@ -17,11 +18,11 @@
   padding: 20px 20px 10px;
 }
 .colorcard .details span {
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   color: #A8A8A8;
 }
 .colorcard .details p {
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   margin-bottom: 24px;
 }
 
@@ -51,12 +52,12 @@
 .colorrow span {
   position: relative;
   top: 12px;
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   color: #A8A8A8;
 }
 .colorrow p {
   position: relative;
   top: 8px;
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   margin-bottom: 24px;
 }

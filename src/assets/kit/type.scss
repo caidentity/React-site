@@ -1,28 +1,29 @@
+@import "../variables.scss";
 
 /*--- TYPE ----*/
 h1 {
   font-size: 42px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+  font-family: $font-light;
 }
 h2 {
   font-size: 34px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+  font-family: $font-light;
 }
 h3 {
   font-size: 24px;
-  font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
+  font-family: $font-light;
 }
 h4 {
   font-size: 16px;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
 }
 h5 {
   font-size: 14px;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+  font-family: $font-med;
 }
 p {
   font-size: 15px;
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   line-height: 30px;
   color: #777b85;
 }
@@ -47,7 +48,7 @@ a {
 }
 h4.subhead {
   font-size: 15px;
-  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+  font-family: $font-reg;
   color: #848484;
   margin: 0px 0px 40px;
 }

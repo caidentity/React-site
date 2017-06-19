@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 $react-button-colors: (
   primary:    #387ef5,
   secondary:  #32db64,
@@ -12,7 +14,7 @@ button{
   border-radius: 4px;
   transition: transform 0.5s ease;
   -webkit-transition: transform 0.5s ease;
-  font-family: "gotham-medium", helevetica neue, helvetica, sans-serif;
+  font-family: $font-med;
   &:focus{
     outline: none;
     transition: transform 0.5s ease;
