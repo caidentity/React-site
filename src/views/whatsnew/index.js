@@ -16,9 +16,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 import PrismicApp from '../../PrismicApp';
-import Prismic from 'prismic.io';
-import PrismicConfig from '../../prismic-configuration';
-
 
 import s from './styles.css';
 import styles from '../../assets/app.css';
@@ -44,38 +41,36 @@ class WhatsNewPage extends React.Component {
     this.fetchPage(props);
   }
 
-  fetchPage() {
-    if (this.props.prismicCtx) {
-      // We are using the function to get a document by its uid
-      return this.props.prismicCtx.api.getSingle('guides', {}, (err, doc) => {
-        if (doc) {
-                      // We put the retrieved content in the state as a doc variable
-          this.setState({ doc });
-        } else {
-          // We changed the state to display error not found if no matched doc
-          this.setState({ notFound: !doc });
-        }
-      });
+  fetchPage(props) {
+      if (props.prismicCtx) {
+        // We are using the function to get a document by its uid
+        return props.prismicCtx.api.getSingle('guides', {}, (err, doc) => {
+          if (doc) {
+                        // We put the retrieved content in the state as a doc variable
+            this.setState({ doc });
+          } else {
+            // We changed the state to display error not found if no matched doc
+            this.setState({ notFound: !doc });
+          }
+        });
+      }
+      return null;
     }
-    return null;
-  }
+
 
   render() {
-    if (this.state.doc) {
-    if(!this.state.doc.id) return <h1>Loading</h1>;
-
-  return (
-        <div data-wio-id={this.state.doc.id}>
-          {/* This is how to get an image into your template */}
-          {/* This is how to get text into your template */}
-          <h1>{this.state.doc.getText('guides.page_tite')}</h1>
-          {/* This is how to get structured text into your template */}
-        </div>
-      );
-    } else if (this.state.notFound) {
-      return <NotFound />;
-    }
+    if(this.state.notFound) return <NotFound />;
+    if(!this.state.doc) return <h1>Loading</h1>;
+    return (
+      <div data-wio-id={this.state.doc.id}>
+        {/* This is how to get an image into your template */}
+        {/* This is how to get text into your template */}
+        <h1>{this.state.doc.getText('guides.page_tite')}</h1>
+        {/* This is how to get structured text into your template */}
+      </div>
+    );
   }
+
 }
 
 export default WhatsNewPage;
