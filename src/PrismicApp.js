@@ -1,16 +1,20 @@
 import React from 'react';
 import 'whatwg-fetch';
 import Prismic from 'prismic.io';
+import PrismicToolbar from 'prismic-toolbar';
 import PrismicConfig from './prismic-configuration';
 import Layout from './components/Layout';
 
 export default class PrismicApp extends React.Component {
 
+  propTypes = {
+  };
+
   state = {
     prismicCtx: null,
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.buildContext().then((prismicCtx) => {
       this.setState({ prismicCtx });
     }).catch((e) => {
@@ -28,7 +32,7 @@ export default class PrismicApp extends React.Component {
 
   buildContext() {
     const accessToken = PrismicConfig.accessToken;
-    return Prismic.api(PrismicConfig.apiEndpoint, { accessToken }).then(api => ({
+    return Prismic.api(PrismicConfig.apiEndpoint).then(api => ({
       api,
       endpoint: PrismicConfig.apiEndpoint,
       accessToken,
@@ -38,13 +42,12 @@ export default class PrismicApp extends React.Component {
   }
 
   render() {
-      if(!this.state.prismicCtx) return '';
-
-     const childrenWithProps = React.Children.map(this.props.children,
-       (child) => React.cloneElement(child, {
-         prismicCtx: this.state.prismicCtx
-       })
-      );
-      return <div>{childrenWithProps}</div>;
+    if (!this.state.prismicCtx) return null;
+    const childrenWithProps = React.Children.map(this.props.children, (child) => {
+      return React.cloneElement(child, {
+       prismicCtx: this.state.prismicCtx
+      });
+    });
+    return <div>{childrenWithProps}</div>;
   }
 }

@@ -34,20 +34,20 @@ class Layout extends React.Component {
   }
 
   render() {
-      return (
-        <PrismicApp>
-          <div className={styles.headbg} ref={node => (this.root = node)}>
-            <Navbar />
-            <main>
-              <div>
-                <div {...this.props} className={cx(s.content, this.props.className)} />
-              </div>
-              <Footer />
-            </main>
-          </div>
-        </PrismicApp>
-      );
-    }
+    return (
+      <PrismicApp>
+        <div className={styles.headbg} ref={node => (this.root = node)}>
+          <Navbar />
+          <main>
+            <div>
+              <div {...this.props} className={cx(s.content, this.props.className)} />
+            </div>
+            <Footer />
+          </main>
+        </div>
+      </PrismicApp>
+    );
+  }
 }
 
 export default Layout;

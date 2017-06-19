@@ -9,6 +9,7 @@
  */
 
 import React from 'react';
+import PrismicApp from './PrismicApp';
 
 function decodeParam(val) {
   if (!(typeof val === 'string' || val.length === 0)) {
@@ -75,11 +76,11 @@ function resolve(routes, context) {
         }),
       ]).then(([Page, ...data]) => {
         const props = keys.reduce((result, key, i) => ({ ...result, [key]: data[i] }), {});
-        return <Page route={{ ...route, params }} error={context.error} {...props} />;
+        return <PrismicApp><Page route={{ ...route, params }} error={context.error} {...props} /></PrismicApp>;
       });
     }
 
-    return route.load().then(Page => <Page route={{ ...route, params }} error={context.error} />);
+    return route.load().then(Page => <PrismicApp><Page route={{ ...route, params }} error={context.error} /></PrismicApp>);
   }
 
   const error = new Error('Page not found');

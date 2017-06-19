@@ -1,5 +1,5 @@
 {
-  "name": "brabdguide",
+  "name": "brandguide",
   "version": "0.0.0",
   "private": true,
   "engines": {
@@ -11,6 +11,7 @@
     "classnames": "^2.2.5",
     "fastclick": "^1.0.6",
     "history": "^4.6.1",
+    "prismic-toolbar": "0.0.2",
     "prismic.io": "^3.5.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
