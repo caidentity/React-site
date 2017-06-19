@@ -9,21 +9,20 @@
  */
 
 import React from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import { StickyContainer } from 'react-sticky';
 import Layout from '../../../components/Layout';
 import Sidebar from '../../../components/Sidebar/BrandGuideSidebar';
 import Link from '../../../components/Link';
 import ReactButton from '../../../components/Button';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { StickyContainer, Sticky } from 'react-sticky';
 
 import s from './styles.css';
 import styles from '../../../assets/app.css';
-import classnames from 'classnames';
 
 class LogoPage extends React.Component {
 
   componentDidMount() {
-    document.title = "Our Logo";
+    document.title = 'Our Logo';
   }
 
   render() {
@@ -32,7 +31,7 @@ class LogoPage extends React.Component {
         <div className={styles.pagetitle}>
           <h1 className={styles.title}>Our Logo</h1>
         </div>
-        <StickyContainer style={{zIndex: 2}}>
+        <StickyContainer style={{ zIndex: 2 }}>
           <div className={styles.frame}>
             <Sidebar />
             <section className={styles.content}>
@@ -94,7 +93,7 @@ class LogoPage extends React.Component {
                     </div>
                   </Col>
                   <Col xs={12} md={6}>
-                    <div className={s.lockup+ ' ' + s.darkbg} >
+                    <div className={`${s.lockup} ${s.darkbg}`} >
                       <img src="/img/guide/logo/logo-stack-transparent.png"></img>
                     </div>
                   </Col>
@@ -104,7 +103,7 @@ class LogoPage extends React.Component {
                     </div>
                   </Col>
                   <Col xs={12} md={6}>
-                    <div className={s.lockup+ ' ' + s.darkbg} >
+                    <div className={`${s.lockup} ${s.darkbg}`} >
                       <img src="/img/guide/logo/logo-mark-transparent.png"></img>
                     </div>
                   </Col>

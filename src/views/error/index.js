@@ -9,6 +9,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import history from '../../history';
 import Link from '../../components/Link';
 import s from './styles.css';
@@ -16,7 +17,7 @@ import s from './styles.css';
 class ErrorPage extends React.Component {
 
   static propTypes = {
-    error: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
+    error: PropTypes.object,  // eslint-disable-line react/forbid-prop-types
   };
 
   componentDidMount() {

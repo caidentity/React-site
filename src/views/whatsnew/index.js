@@ -10,34 +10,26 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Link from '../../components/Link';
-import ReactButton from '../../components/Button';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { StickyContainer, Sticky } from 'react-sticky';
-
-
 import s from './styles.css';
 import styles from '../../assets/app.css';
-import classnames from 'classnames';
 
 class WhatsNewPage extends React.Component {
+
+  static propTypes = {
+    prismicCtx: React.PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  }
 
   state = {
     doc: null,
     notFound: false,
   };
 
-
-  componentDidMount() {
-    document.title = "Whats New";
-  }
-
-  componentDidUpdate() {
-    this.props.prismicCtx.toolbar();
-  }
-
   componentWillMount() {
     this.fetchPage(this.props);
+  }
+
+  componentDidMount() {
+    document.title = 'Whats New';
   }
 
   componentWillReceiveProps(props) {
@@ -45,24 +37,22 @@ class WhatsNewPage extends React.Component {
   }
 
   fetchPage(props) {
-      if (props.prismicCtx) {
-        // We are using the function to get a document by its uid
-        return props.prismicCtx.api.getSingle('guides')
-        .then((doc) => {
-          if(doc) this.setState({doc});
-          else this.setState({notFound: true});
-        })
-        .catch((e) => {
-          this.setState({notFound: true});
-        });
-      }
-      return;
-    }
+    if (!props.prismicCtx) return;
+    // We are using the function to get a document by its uid
+    props.prismicCtx.api.getSingle('guides')
+    .then((doc) => {
+      if (doc) this.setState({ doc });
+      else this.setState({ notFound: true });
+    })
+    .catch(() => {
+      this.setState({ notFound: true });
+    });
+  }
 
 
   render() {
-    if(this.state.notFound) return null; //component NotFound doesn't exist yet <NotFound />;
-    if(!this.state.doc) return <h1>Loading</h1>;
+    if (this.state.notFound) return null; // component NotFound doesn't exist yet <NotFound />;
+    if (!this.state.doc) return <h1>Loading</h1>;
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>

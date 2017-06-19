@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 import Prismic from 'prismic.io';
 import PrismicToolbar from 'prismic-toolbar';
 import PrismicConfig from './prismic-configuration';
-import Layout from './components/Layout';
 
 export default class PrismicApp extends React.Component {
 
-  propTypes = {
+  static propTypes = {
+    children: PropTypes.element,
   };
 
   state = {
@@ -15,11 +16,16 @@ export default class PrismicApp extends React.Component {
   };
 
   componentDidMount() {
-    this.buildContext().then((prismicCtx) => {
+    this.buildContext()
+    .then((prismicCtx) => {
       this.setState({ prismicCtx });
     }).catch((e) => {
       console.error(`Cannot contact the API, check your prismic configuration:\n${e}`);
     });
+  }
+
+  componentDidUpdate() {
+    this.state.prismicCtx.toolbar();
   }
 
   refreshToolbar() {
@@ -45,7 +51,7 @@ export default class PrismicApp extends React.Component {
     if (!this.state.prismicCtx) return null;
     const childrenWithProps = React.Children.map(this.props.children, (child) => {
       return React.cloneElement(child, {
-       prismicCtx: this.state.prismicCtx
+        prismicCtx: this.state.prismicCtx,
       });
     });
     return <div>{childrenWithProps}</div>;
