@@ -28,9 +28,9 @@ function ColorCard(props) {
     borderColor: props.bordercolor,
   };
 
-  return  <div className={s.colorcard}>
-            <div className={s.header} style={test}></div>
-            <div className={s.footer}>
+  return  <div className={styles.colorcard}>
+            <div className={styles.color} style={test}></div>
+            <div className={styles.details}>
               <Row>
                 <Col xs={12} sm={12} md={6}><span>Hex</span></Col>
                 <Col xs={12} sm={12} md={6}><span>RGB</span></Col>
@@ -49,6 +49,32 @@ function ColorCard(props) {
           </div>
 
 }
+
+
+function ColorRow(props) {
+
+  var test = {
+    backgroundColor: props.bgcolor,
+    borderColor: props.bordercolor,
+  };
+
+  return  <div className={styles.colorrow}>
+            <div className={styles.color} style={test}></div>
+              <Row>
+                <Col xs={12} sm={12} md={4}><span>Hex</span></Col>
+                <Col xs={12} sm={12} md={4}><span>RGB</span></Col>
+                <Col xs={12} sm={12} md={4}><span>CMYK</span></Col>
+              </Row>
+              <Row>
+                <Col xs={12} sm={12} md={4}><p>{props.hex}</p></Col>
+                <Col xs={12} sm={12} md={4}><p>{props.rgb}</p></Col>
+                <Col xs={12} sm={12} md={4}><p>{props.cmyk}</p></Col>
+              </Row>
+          </div>
+
+}
+
+
 
 
 class ColorPage extends React.Component {
@@ -77,17 +103,19 @@ class ColorPage extends React.Component {
                   <Col xs={12} md={12}>
                     <h2 className={styles.sectionheader}>Primary Pallete</h2>
                   </Col>
-                  <Col xs={12} md={12}>
-                    <p>Our primary palette uses bright colors to bring a boldness to our brand, and is used in logical ways throughout product and marketing to guide the eye and highlight the important bits. We pepper warmer, secondary palette colors throughout to soften the experience and to impart confidence and optimism.</p>
-                  </Col>
-                  <Col xs={12} sm={12} md={4}>
-                    <ColorCard bgcolor="#fff" bordercolor="#E6E6E6" hex="#fff" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
-                  </Col>
-                  <Col xs={12} sm={12} md={4}>
+                  <Col xs={12} sm={12} md={6}>
                     <ColorCard bgcolor="#2DBE60" bordercolor="#2DBE60"  hex="#2DBE60" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
                   </Col>
-                  <Col xs={12} sm={12} md={4}>
+                  <Col xs={12} sm={12} md={6}>
                     <ColorCard bgcolor="#7D8688" bordercolor="#7D8688"  hex="#7D8688" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <p>Our Primary Green is the essence of creation. It represents the birth of growth of ideas into concrete projects.</p>
+                    <p>It should be use very carefully, only as an accent on meaningful and/ or very few elements accross our brand.</p>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <p>Our Primary Gray is the perfect balance between the essence of creation. It represents the birth of growth of ideas into concrete projects.</p>
+                    <p>It should be use very carefully, only as an accent on meaningful and/ or very few elements accross our brand.</p>
                   </Col>
                 </Row>
                 <Row>
@@ -113,6 +141,40 @@ class ColorPage extends React.Component {
                   </Col>
                   <Col xs={12} sm={12} md={4}>
                     <ColorCard bgcolor="#FF3D69" bordercolor="#FF3D69"  hex="#FF3D69" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={12} md={12}>
+                    <h2 className={styles.sectionheader}>Extended Pallete</h2>
+                  </Col>
+                  <Col xs={12} md={12}>
+                    <p>Our primary palette uses bright colors to bring a boldness to our brand, and is used in logical ways throughout product and marketing to guide the eye and highlight the important bits. We pepper warmer, secondary palette colors throughout to soften the experience and to impart confidence and optimism.</p>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <h5>Green Pallete</h5>
+                    <ColorRow bgcolor="#2DBE60" bordercolor="#2DBE60" hex="#596062" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#40D273" bordercolor="#40D273"  hex="#767E82" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#E0FDEA" bordercolor="#E0FDEA"  hex="#AAAFB4" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <h5>Grey Pallete</h5>
+                    <ColorRow bgcolor="#596062" bordercolor="#596062" hex="#596062" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#767E82" bordercolor="#767E82"  hex="#767E82" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#AAAFB4" bordercolor="#AAAFB4"  hex="#AAAFB4" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#D6DBE0" bordercolor="#D6DBE0"  hex="#D6DBE0" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
+                  </Col>
+                  <Col xs={12} sm={12} md={12}>
+                    <ColorRow bgcolor="#ECEFF3" bordercolor="#ECEFF3"  hex="#ECEFF3" rgb="243,322,211" cmyk="100, 60, 0, 0"/>
                   </Col>
                 </Row>
                 <Row>

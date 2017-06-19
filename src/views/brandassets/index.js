@@ -21,7 +21,7 @@ import styles from '../../assets/app.css';
 import classnames from 'classnames';
 
 function Brandasset(props) {
-  return  <div className={styles.brandasset+ ' ' + "revealer"} data-emergence="hidden">
+  return  <div className={styles.brandasset}>
             <img src={props.thumburl}/>
             <div className={styles.overlay}>
               <h5>{props.name}</h5>
@@ -63,8 +63,8 @@ class AssetPage extends React.Component {
             </Row>
             <Row id="logo">
               <Col xs={12} md={12}>
-              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Our logo</h2>
-              <h4 className={styles.subhead} data-emergence="hidden">Our logos can only be used as permitted by our Trademark Usage Guidelines.</h4>
+              <h2 className={styles.sectionheader}>Our logo</h2>
+              <h4 className={styles.subhead}>Our logos can only be used as permitted by our Trademark Usage Guidelines.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Logo" thumburl="/img/assets/logo-1.jpg" downloadurl="/"/>
@@ -87,8 +87,8 @@ class AssetPage extends React.Component {
             </Row>
             <Row id="office">
               <Col xs={12} md={12}>
-                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">The office</h2>
-                <h4 className={styles.subhead} data-emergence="hidden">Don’t worry about needing to snap photos of our office. We have done that for you. Feel free to use these.</h4>
+                <h2 className={styles.sectionheader}>The office</h2>
+                <h4 className={styles.subhead}>Don’t worry about needing to snap photos of our office. We have done that for you. Feel free to use these.</h4>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Redwood city office" thumburl="/img/assets/office-1.jpg" />
@@ -120,7 +120,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row id="product">
               <Col xs={12} md={12}>
-                <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Products</h2>
+                <h2 className={styles.sectionheader}>Products</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="iOS" thumburl="/img/assets/product-1.jpg" />
@@ -143,7 +143,7 @@ class AssetPage extends React.Component {
             </Row>
             <Row id="leadership">
               <Col xs={12} md={12}>
-              <h2 className={styles.sectionheader+ ' ' + "revealer"} data-emergence="hidden">Leadership team</h2>
+              <h2 className={styles.sectionheader}>Leadership team</h2>
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <Brandasset name="Chris O'Niel" thumburl="/img/assets/team-1.jpg" />

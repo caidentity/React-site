@@ -7,3 +7,39 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
+
+ .typeface {
+   display: grid;
+   background: #fff;
+   width: 100%;
+   margin: 5px 0px;
+   border: 1px solid #E6E6E6;
+   height: 200px;
+ }
+ .typeface h2 {
+   display: block;
+   position: relative;
+   margin: 20px auto 0px;
+   padding: 14px 0px;
+   height: 15px;
+ }
+ .typeface span {
+   display: block;
+   position: relative;
+   margin: 0 auto;
+   max-width: 250px;
+   word-wrap: break-word;
+   text-align: center;
+ }
+
+.headline span {
+  position: relative;
+  color: #ccc;
+  margin: 0px 10px 10px 0px;
+  font-size: 13px;
+  bottom: 0;
+  font-family: "gotham-book", helevetica neue, helvetica, sans-serif;
+}
+.headline h1,h2,h3,h4,h5 {
+  display: inline-block;
+}

@@ -5,7 +5,7 @@ h1 {
   font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
 }
 h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-family: "gotham-light", helevetica neue, helvetica, sans-serif;
 }
 h3 {
@@ -34,6 +34,16 @@ a {
 /*--- CUSTOM STYLING ----*/
 .sectionheader {
   margin: 100px 0px 30px;
+  &:after {
+    width: 10px;
+    height: 1px;
+    background: #000;
+  }
+}
+.sectionheader::after {
+  width: 10px;
+  height: 1px;
+  background: #000;
 }
 h4.subhead {
   font-size: 15px;
@@ -47,7 +57,7 @@ h4.subhead {
     font-size: 42px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
   h3 {
     font-size: 24px;
