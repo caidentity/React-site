@@ -39,7 +39,7 @@ class WhatsNewPage extends React.Component {
   fetchPage(props) {
     if (!props.prismicCtx) return;
     // We are using the function to get a document by its uid
-    props.prismicCtx.api.getSingle('guides')
+    props.prismicCtx.api.getByUID('whatsnew', 'whatsnew')
     .then((doc) => {
       if (doc) this.setState({ doc });
       else this.setState({ notFound: true });
@@ -56,13 +56,13 @@ class WhatsNewPage extends React.Component {
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title}>{this.state.doc.getText('guides.title')}</h1>
+          <h1 className={styles.title}>{this.state.doc.getText('whatsnew.title')}</h1>
         </div>
         <div className={styles.frame}>
           <div data-wio-id={this.state.doc.id}>
             {/* This is how to get an image into your template */}
             {/* This is how to get text into your template */}
-            <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('guides.body').asHtml() }} />
+            <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('whatsnew.body').asHtml() }} />
             {/* This is how to get structured text into your template */}
           </div>
         </div>
