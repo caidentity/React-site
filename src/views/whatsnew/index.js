@@ -10,37 +10,61 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Link from '../../components/Link';
-import ReactButton from '../../components/Button';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { StickyContainer, Sticky } from 'react-sticky';
-
 import s from './styles.css';
 import styles from '../../assets/app.css';
-import classnames from 'classnames';
 
 class WhatsNewPage extends React.Component {
 
-  componentDidMount() {
-    document.title = "Whats New";
+  static propTypes = {
+    prismicCtx: React.PropTypes.object, // eslint-disable-line react/forbid-prop-types
   }
 
+  state = {
+    doc: null,
+    notFound: false,
+  };
+
+  componentWillMount() {
+    this.fetchPage(this.props);
+  }
+
+  componentDidMount() {
+    document.title = 'Whats New';
+  }
+
+  componentWillReceiveProps(props) {
+    this.fetchPage(props);
+  }
+
+  fetchPage(props) {
+    if (!props.prismicCtx) return;
+    // We are using the function to get a document by its uid
+    props.prismicCtx.api.getByUID('whatsnew', 'whatsnew')
+    .then((doc) => {
+      if (doc) this.setState({ doc });
+      else this.setState({ notFound: true });
+    })
+    .catch(() => {
+      this.setState({ notFound: true });
+    });
+  }
+
+
   render() {
+    if (this.state.notFound) return null; // component NotFound doesn't exist yet <NotFound />;
+    if (!this.state.doc) return <h1>Loading</h1>;
     return (
       <Layout className={s.content}>
         <div className={styles.pagetitle}>
-          <h1 className={styles.title} >Whats New</h1>
+          <h1 className={styles.title}>{this.state.doc.getText('whatsnew.title')}</h1>
         </div>
         <div className={styles.frame}>
-          <Grid fluid>
-            <Row>
-              <Col xs={12} sm={12} md={12}>
-                <h2>Version Title</h2>
-                <p>date</p>
-                <p>Content Title</p>
-              </Col>
-            </Row>
-          </Grid>
+          <div data-wio-id={this.state.doc.id}>
+            {/* This is how to get an image into your template */}
+            {/* This is how to get text into your template */}
+            <div dangerouslySetInnerHTML={{ __html: this.state.doc.getStructuredText('whatsnew.body').asHtml() }} />
+            {/* This is how to get structured text into your template */}
+          </div>
         </div>
       </Layout>
     );

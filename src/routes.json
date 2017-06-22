@@ -11,27 +11,37 @@
   },
   {
     "path": "/whatsnew",
-    "page": "./views/whatsnew"
+    "page": "./views/whatsnew/index.js"
   },
   {
     "path": "/logo",
-    "page": "./views/marketing/logo"
+    "page": "./views/marketing/logo",
+    "chunk": "main"
   },
   {
     "path": "/color",
-    "page": "./views/marketing/color"
+    "page": "./views/marketing/color",
+    "chunk": "main"
   },
   {
     "path": "/type",
-    "page": "./views/marketing/type"
+    "page": "./views/marketing/type",
+    "chunk": "main"
   },
   {
     "path": "/photo",
-    "page": "./views/marketing/photo"
+    "page": "./views/marketing/photo",
+    "chunk": "main"
   },
   {
     "path": "/assets",
-    "page": "./views/brandassets"
+    "page": "./views/brandassets",
+    "chunk": "main"
+  },
+  {
+    "path": "/preview",
+    "page": "./views/preview/index.js",
+    "chunk": "main"
   },
   {
     "path": "/tasks/:status(pending|completed)?",
