@@ -6,6 +6,7 @@ class Terminology extends Component {
       <div className="content">
         <div className="contentHeader">
           <h2>Terminology</h2>
+          <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
         </div>
         <p>Cras facilisis urna ornare ex volutpat, et
         convallis erat elementum. Ut aliquam, ipsum vitae
