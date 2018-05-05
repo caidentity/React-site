@@ -1,4 +1,4 @@
-# React Static Boilerplate
+# React Site
 
 ### Directory Layout
 
@@ -35,12 +35,12 @@
 [Yarn](https://yarnpkg.com/) installed on your development machine.
 
 **Step 2**. Clone this repository (alternatively, use [Yeoman
-generator](https://github.com/kriasoft/react-static-boilerplate/tree/generator-react-static) to
+generator](/tree/generator-react-static) to
 bootstrap your project):
 
 ```shell
 $ git clone -o react-static-boilerplate -b master --single-branch \
-      https://github.com/kriasoft/react-static-boilerplate.git MyApp
+      .git MyApp
 $ cd MyApp
 $ yarn install                  # Install project dependencies listed in package.json
 ```
@@ -103,6 +103,10 @@ $ yarn install
 
 
 ## Added Features
-React Static Boilerplate (https://github.com/kriasoft/react-static-boilerplate)
-React Flexbox Grid (https://github.com/roylee0704/react-flexbox-grid)
-Node Sass Chokidar
+React Site - (https://github.com/kriasoft/react-static-boilerplate)
+React Flexbox Grid - (https://github.com/roylee0704/react-flexbox-grid)
+Node Sass
+Emergence.js - For animations -(https://github.com/xtianmiller/emergence.js)
+react-dom - https://www.npmjs.com/package/react-dom
+react-sticky - https://github.com/captivationsoftware/react-sticky
+react-scrollchor - https://github.com/bySabi/react-scrollchor

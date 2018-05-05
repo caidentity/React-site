@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="fonts.css">
   </head>
   <body>
     <div id="container"></div>
@@ -20,5 +21,19 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     <%_ } _%>
+    <script src="/emerge.js"></script>
+    <script>
+    emergence.init({
+    callback: function(element, state) {
+      if (state === 'visible') {
+        console.log('Element is visible.');
+      } else if (state === 'reset') {
+        console.log('Element is hidden with reset.');
+      } else if (state === 'noreset') {
+        console.log('Element is hidden with NO reset.');
+      }
+    }
+    });
+    </script>
   </body>
 </html>

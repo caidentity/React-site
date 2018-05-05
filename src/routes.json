@@ -10,8 +10,28 @@
     "chunk": "main"
   },
   {
-    "path": "/about",
-    "page": "./views/about"
+    "path": "/whatsnew",
+    "page": "./views/whatsnew"
+  },
+  {
+    "path": "/logo",
+    "page": "./views/marketing/logo"
+  },
+  {
+    "path": "/color",
+    "page": "./views/marketing/color"
+  },
+  {
+    "path": "/type",
+    "page": "./views/marketing/type"
+  },
+  {
+    "path": "/photo",
+    "page": "./views/marketing/photo"
+  },
+  {
+    "path": "/assets",
+    "page": "./views/brandassets"
   },
   {
     "path": "/tasks/:status(pending|completed)?",
