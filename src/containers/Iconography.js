@@ -24,7 +24,7 @@ class Iconography extends Component {
         <h4>Sizing</h4>
         <p>Across all platforms we have various sizes to consider based on real estate and standard practices each platform considers</p>
         {/* GUIDELINE SECTION */}
-        <h1>Guidelines</h1>
+        <h2>Guidelines</h2>
         <h4>Solid vs Hollow Icons</h4>
         <p>Solid icons are seen as the high-level or primary interaction points
         for Evernote. They are used to define the core experiences of Evernote.

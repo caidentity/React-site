@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.8740bc6c.css",
-  "main.css.map": "static/css/main.8740bc6c.css.map",
-  "main.js": "static/js/main.38ae18cc.js",
-  "main.js.map": "static/js/main.38ae18cc.js.map",
+  "main.css": "static/css/main.375ac0b3.css",
+  "main.css.map": "static/css/main.375ac0b3.css.map",
+  "main.js": "static/js/main.e07113be.js",
+  "main.js.map": "static/js/main.e07113be.js.map",
+  "static/media/button-order.png": "static/media/button-order.3bc13255.png",
   "static/media/color-access.png": "static/media/color-access.e7b21819.png",
   "static/media/color-example-blue.png": "static/media/color-example-blue.c40f49ce.png",
   "static/media/color-example-orange.png": "static/media/color-example-orange.67636066.png",
@@ -13,5 +14,7 @@
   "static/media/icon-grid.png": "static/media/icon-grid.aad7187b.png",
   "static/media/icon-solidhollow.png": "static/media/icon-solidhollow.53aec5be.png",
   "static/media/spacing-baseline.png": "static/media/spacing-baseline.836674c0.png",
-  "static/media/spacing-margins.png": "static/media/spacing-margins.38f5d4e2.png"
+  "static/media/spacing-margins.png": "static/media/spacing-margins.38f5d4e2.png",
+  "static/media/type-linelengthbody.png": "static/media/type-linelengthbody.cca4cf49.png",
+  "static/media/type-linelengthshort.png": "static/media/type-linelengthshort.c919bbad.png"
 }

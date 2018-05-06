@@ -13,7 +13,8 @@ class Home extends Component {
         <div className="contentHeader">
           <h2>Global Design Language</h2>
         </div>
-        <p>Global Design Language is the initiative to capture & unify the small details, principles & and guidelines of our experience in order to create a single source of truth.</p>
+        <h4> Misson</h4>
+        <p>To capture & unify the small details, principles & and guidelines of our experience in order to create a single source of truth.</p>
         <p>Keep tabs of <NavLink exact to="/whatsnew">whats new</NavLink> to this source of truth</p>
       </div>
     );

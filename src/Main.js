@@ -14,13 +14,16 @@ import Iconography from "./containers/Iconography";
 import Button from "./containers/Button";
 import WhatsNew from "./containers/whatsnew";
 
+import sidebarlogo from './assets/images/logo-med.png';
+
+
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
           <ul className="header">
-            <h1 className="navTitle">GDL</h1>
+            <div className="navTitle"><img src={sidebarlogo}  width={40} alt="Logo" /></div>
             <div className="navSectionTitle">Overview</div>
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/principles">Principles</NavLink></li>

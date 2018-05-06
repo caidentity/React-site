@@ -18,7 +18,7 @@ class Color extends Component {
           <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy.</p>
         </div>
         {/* GUIDELINE SECTION */}
-        <h1>Guidelines</h1>
+        <h2>Guidelines</h2>
         <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy. When using color make sure to follow these set of guidelines in order to ensure consistency across our product.</p>
         <h4>Use of Primary Colors</h4>
         <p>Green is the primary color for Evernote. It is used strategically to call attention to elements on a page, and not used in large fields. </p>
