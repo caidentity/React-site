@@ -61,9 +61,13 @@ ul.header {
 ul.header li {
   display: block;
   list-style-type: none;
-  margin: 0;
-  width: 240px;
+  margin: 0px 10px;
+  border-radius: 4px;
   font-size: 14px;
+  transition: all 0.15s ease-out;
+}
+ul.header li:hover {
+  background: #eee;
 }
 ul.header li a {
   color: #000;

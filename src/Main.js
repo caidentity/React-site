@@ -17,11 +17,11 @@ class Main extends Component {
         <div>
           <ul className="header">
             <h1 className="navTitle">GDL</h1>
-            <li><div className="navSectionTitle">Overview</div></li>
+            <div className="navSectionTitle">Overview</div>
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/principles">Principles</NavLink></li>
             <li><NavLink to="/terminology">Terminology</NavLink></li>
-            <li><div className="navSectionTitle">Atoms</div></li>
+            <div className="navSectionTitle">Atoms</div>
             <li><NavLink exact to="/color">Color</NavLink></li>
           </ul>
           <div className="rightside">
