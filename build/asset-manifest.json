@@ -1,6 +1,17 @@
 {
   "main.css": "static/css/main.8740bc6c.css",
   "main.css.map": "static/css/main.8740bc6c.css.map",
-  "main.js": "static/js/main.a40b3231.js",
-  "main.js.map": "static/js/main.a40b3231.js.map"
+  "main.js": "static/js/main.38ae18cc.js",
+  "main.js.map": "static/js/main.38ae18cc.js.map",
+  "static/media/color-access.png": "static/media/color-access.e7b21819.png",
+  "static/media/color-example-blue.png": "static/media/color-example-blue.c40f49ce.png",
+  "static/media/color-example-orange.png": "static/media/color-example-orange.67636066.png",
+  "static/media/color-example-red.png": "static/media/color-example-red.41924487.png",
+  "static/media/color-example-yellow.png": "static/media/color-example-yellow.c2f4f0c6.png",
+  "static/media/color-primaryuse.png": "static/media/color-primaryuse.56bd8592.png",
+  "static/media/color-visualuse.png": "static/media/color-visualuse.24c9b0c9.png",
+  "static/media/icon-grid.png": "static/media/icon-grid.aad7187b.png",
+  "static/media/icon-solidhollow.png": "static/media/icon-solidhollow.53aec5be.png",
+  "static/media/spacing-baseline.png": "static/media/spacing-baseline.836674c0.png",
+  "static/media/spacing-margins.png": "static/media/spacing-margins.38f5d4e2.png"
 }

@@ -11,6 +11,8 @@ import Color from "./containers/Color";
 import Typography from "./containers/Typography";
 import Spacing from "./containers/Spacing";
 import Iconography from "./containers/Iconography";
+import Button from "./containers/Button";
+import WhatsNew from "./containers/whatsnew";
 
 class Main extends Component {
   render() {
@@ -29,7 +31,9 @@ class Main extends Component {
             <li><NavLink exact to="/spacing">Spacing</NavLink></li>
             <li><NavLink exact to="/iconography">Iconography</NavLink></li>
             <div className="navSectionTitle">Molecules</div>
-            <li><NavLink exact to="/color">Buttons</NavLink></li>
+            <li><NavLink exact to="/button">Buttons</NavLink></li>
+            <div className="navSectionTitle">Misc</div>
+            <li><NavLink exact to="/whatsnew">Whats New</NavLink></li>
           </ul>
           <div className="rightside">
             <Route exact path="/" component={Home}/>
@@ -39,6 +43,8 @@ class Main extends Component {
             <Route path="/typography" component={Typography}/>
             <Route path="/spacing" component={Spacing}/>
             <Route path="/iconography" component={Iconography}/>
+            <Route path="/button" component={Button}/>
+            <Route path="/whatsnew" component={WhatsNew}/>
           </div>
         </div>
       </HashRouter>

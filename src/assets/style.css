@@ -65,7 +65,7 @@ ul.header::-webkit-scrollbar {
 ul.header li {
   display: block;
   list-style-type: none;
-  margin: 0px 10px;
+  margin: 0px 8px;
   border-radius: 4px;
   font-size: 14px;
   transition: all 0.15s ease-out;
@@ -76,7 +76,7 @@ ul.header li:hover {
 ul.header li a {
   color: #000;
   text-decoration: none;
-  padding: 16px;
+  padding: 8px 8px;
   display: block;
 }
 .active {
