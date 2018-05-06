@@ -7,7 +7,6 @@ class Principles extends Component {
         {/* CONTENT HEADER */}
         <div className="contentHeader">
           <h2>Principles</h2>
-          <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
         </div>
         {/* Principles */}
         <p>These principles describe our ambition for a delightful and consistent Evernote experience, from the home to all of the clients. This is meant to guide our visual design, interaction patterns, illustrations, and even product decisions. Note: These are not ordered by priority; when you begin a project you should consider which principle is most important for your objectives and optimize for that, just making sure you dont violate any of the others.</p>
