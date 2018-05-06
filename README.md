@@ -1,13 +1,17 @@
 ## Overview
-This is the home of our GDL Documentation
+This is our home for GDL Documentation
 
 ## Install
-npm install
-npm start
+1. `npm install`
+2. `npm start`
 
 ## Running
-npm start
+1. `npm start`
 
 ## Deploying
-npm run build
-firebase deploy
+To update build directory `npm run build`
+After build directory is updated, run `firebase deploy` to deploy
+
+
+- Used to setup Firebase integration
+https://thewebsitedev.com/deploying-react-app-firebase/
