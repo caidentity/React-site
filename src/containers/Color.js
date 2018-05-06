@@ -6,7 +6,7 @@ class Color extends Component {
       <div className="content">
         <div className="contentHeader">
           <h2>Color</h2>
-          <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+          <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy.</p>
         </div>
         <p>Cras facilisis urna ornare ex volutpat, et
         convallis erat elementum. Ut aliquam, ipsum vitae
