@@ -4,6 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div className="content">
+        {/* CONTENT HEADER */}
         <div className="contentHeader">
           <h2>Home</h2>
         </div>
