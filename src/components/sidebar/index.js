@@ -4,17 +4,18 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./containers/Home";
-import Principles from "./containers/Principles";
-import Terminology from "./containers/Terminology";
-import Color from "./containers/Color";
-import Typography from "./containers/Typography";
-import Spacing from "./containers/Spacing";
-import Iconography from "./containers/Iconography";
-import Button from "./containers/Button";
-import WhatsNew from "./containers/whatsnew";
 
-import sidebarlogo from './assets/images/logo-med.png';
+import Home from "../../containers/Home";
+import Principles from "../../containers/Principles";
+import Terminology from "../../containers/Terminology";
+import Color from "../../containers/Color";
+import Typography from "../../containers/Typography";
+import Spacing from "../../containers/Spacing";
+import Iconography from "../../containers/Iconography";
+import Button from "../../containers/Button";
+import WhatsNew from "../../containers/whatsnew";
+
+import sidebarlogo from '../../assets/images/logo-med.png';
 
 
 class Main extends Component {

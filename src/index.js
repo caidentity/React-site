@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./Main";
-import "./assets/style.css";
+import Sidebar from "./components/sidebar";
+import "./assets/stylesheets/style.css";
  
 ReactDOM.render(
-  <Main/>,
+  <Sidebar/>,
   document.getElementById("root")
 );
