@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Row, Col } from 'react-simple-flex-grid';
+import "react-simple-flex-grid/lib/main.css";
 
 import "../assets/stylesheets/color.css";
 
@@ -20,24 +22,50 @@ class Color extends Component {
           <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy.</p>
         </div>
         <h3>Primary Pallete</h3>
-        <div className="colorCard">
-          <div className="header colorgreen"></div>
-          <h3>Green</h3>
-          <h4>Hex</h4>
-          <p>#2dbe60</p>
-        </div>
-        <div className="colorCard">
-          <div className="header colorblue"></div>
-          <h3>Blue</h3>
-          <h4>Hex</h4>
-          <p>#1191F6</p>
-        </div>
-        <div className="colorCard">
-          <div className="header colorred"></div>
-          <h3>Red</h3>
-          <h4>Hex</h4>
-          <p>#F24840</p>
-        </div>
+        <Row gutter={16}>
+          <Col span={4}>
+            <div className="colorCardHeader colorgreen"></div>
+            <div className="colorCard">
+              <h3>Green</h3>
+              <h4>Hex</h4>
+              <p>#2dbe60</p>
+            </div>
+          </Col>
+          <Col span={4}>
+            <div className="colorCardHeader colorblue"></div>
+            <div className="colorCard">
+              <h3>Blue</h3>
+              <h4>Hex</h4>
+              <p>#1191F6</p>
+            </div>
+          </Col>
+          <Col span={4}>
+            <div className="colorCardHeader colorred"></div>
+            <div className="colorCard">
+              <h3>Green</h3>
+              <h4>Hex</h4>
+              <p>#F24840</p>
+            </div>
+          </Col>
+        </Row>
+        <Row gutter={16}>
+          <Col span={4}>
+            <div className="colorCardHeader colororange"></div>
+            <div className="colorCard">
+              <h3>Green</h3>
+              <h4>Hex</h4>
+              <p>#FF8003</p>
+            </div>
+          </Col>
+          <Col span={4}>
+            <div className="colorCardHeader coloryellow"></div>
+            <div className="colorCard">
+              <h3>Blue</h3>
+              <h4>Hex</h4>
+              <p>#FCB100</p>
+            </div>
+          </Col>
+        </Row>
         {/* GUIDELINE SECTION */}
         <h2>Guidelines</h2>
         <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy. When using color make sure to follow these set of guidelines in order to ensure consistency across our product.</p>
