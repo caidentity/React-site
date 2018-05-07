@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "../assets/stylesheets/color.css";
+
 import colorprimaryuse from '../assets/images/color-primaryuse.png';
 import colorvisualuse from '../assets/images/color-visualuse.png';
 import coloracess from '../assets/images/color-access.png';
@@ -16,6 +18,25 @@ class Color extends Component {
         <div className="contentHeader">
           <h2>Color</h2>
           <p>Color plays an important role in supporting the message wishing to get across as well as supporting visual hierarchy.</p>
+        </div>
+        <h3>Primary Pallete</h3>
+        <div className="colorCard">
+          <div className="header colorgreen"></div>
+          <h3>Green</h3>
+          <h4>Hex</h4>
+          <p>#2dbe60</p>
+        </div>
+        <div className="colorCard">
+          <div className="header colorblue"></div>
+          <h3>Blue</h3>
+          <h4>Hex</h4>
+          <p>#1191F6</p>
+        </div>
+        <div className="colorCard">
+          <div className="header colorred"></div>
+          <h3>Red</h3>
+          <h4>Hex</h4>
+          <p>#F24840</p>
         </div>
         {/* GUIDELINE SECTION */}
         <h2>Guidelines</h2>

@@ -19,27 +19,6 @@ p {
   font-size: 14px;
 }
 
-/*-- COLOR CARD ---*/
-
-.colorCard {
-  display: inline-block;
-  width: 220px;
-  border-radius: 4px;
-  height: 220px;
-  background-color: #fafafa;
-  margin: 20px;
-}
-.colorCard h3 {
-  padding: 0px 16px;
-}
-.colorCard p {
-  padding: 0px 16px;
-}
-.colorCard .header {
-  width: 220px;
-  height: 120px;
-  background-color: #2dbe60;
-}
 /*-- CONTENT ---*/
 
 .rightside {

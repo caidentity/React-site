@@ -1,0 +1,33 @@
+
+/*-- COLOR CARD ---*/
+
+.colorCard {
+  display: inline-block;
+  width: 220px;
+  border-radius: 4px;
+  height: 220px;
+  background-color: #fafafa;
+  margin: 20px;
+}
+.colorCard .header {
+  width: 220px;
+  height: 120px;
+}
+.colorCard h3 {
+  padding: 0px 16px;
+  margin: 12px 0px 8px;
+  font-size: 16px;
+}
+.colorCard h4 {
+  padding: 0px 16px;
+  margin: 4px 0px;
+  font-size: 12px;
+}
+.colorCard p {
+  padding: 0px 16px;
+  margin: 2px 0px;
+}
+
+.colorgreen {background-color: #2dbe60;}
+.colorblue {background-color: #1191F6;}
+.colorred {background-color: #F24840;}
