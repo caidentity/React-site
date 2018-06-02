@@ -24,6 +24,8 @@ class Typography extends Component {
         <p>The optimal line length for your body text is considered to be 50-60 characters per line, including spaces (“Typographie”, E. Ruder). Other sources suggest that up to 75 characters is acceptable.</p>
         <img src={typelinelengthbody}  width={800} alt="Logo" />
         <img src={typelinelengthsmall}  width={800} alt="Logo" />
+        <h4>Truncation</h4>
+        <p>Depending on context truncation differs. For example notebook names tend to be tad shorter so truncation could be sooner, but for note titles that are more perscriptice need to show as much content as possible</p>
         <h4>Line breaking</h4>
         <p> when dealing with wrapping text, Avoid leaving large gaps and orphans on a line. Try not to leave very short words such as prepositions at the end of a line. Well-considered line breaks can avoid hyphenation of words altogether.</p>
       </div>

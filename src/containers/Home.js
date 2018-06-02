@@ -7,7 +7,8 @@ class Home extends Component {
       <div className="content">
         {/* CONTENT HEADER */}
         <div className="contentHeader">
-          <h2>Global Design Language</h2>
+          <h2>Tusk</h2>
+          <h4>Global Design Language</h4>
         </div>
         <h4> Misson</h4>
         <p>To capture & unify the small details, principles & and guidelines of our experience in order to create a single source of truth.</p>

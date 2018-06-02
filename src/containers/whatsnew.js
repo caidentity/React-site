@@ -8,6 +8,12 @@ class WhatsNew extends Component {
           <h2>Whats New</h2>
         </div>
         {/* NEW ENTRY HERE */}
+        <h4>May 24th, 2018</h4>
+        <p>Refined documentation for the following</p>
+        <ul>
+          <li>Typography: Truncation</li>
+        </ul>
+        {/* NEW ENTRY HERE */}
         <h4>May 6th, 2018</h4>
         <p>Refined documentation for the following</p>
         <ul>
